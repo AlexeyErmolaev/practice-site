@@ -1,25 +1,55 @@
 ﻿@media screen and (max-width:350px) {
-    .logo {
+    .logo, order-icon, price-icon, contacts-icon, tracking-icon {
         display: none;
     }
 }
 body{
+	font-size: 1.5em;
 	margin: 0;
 }
-header,footer{background-color:#D8D8D8;}
+
 header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: #FAFAFA;
     width:100%;
-    height:150px;
+    height:100px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
     top:0;
     position: fixed;
 }
 .round{
-	
-	border-radius: 100px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.order-icon {
+    background:url(http://www.favicon.by/ico/59710a1e24838.ico) no-repeat left center; 
+    background-size: 16px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
+}
+.price-icon{
+	background:url(http://www.favicon.by/ico/5973149c2f16f.ico) no-repeat left center; 
+    background-size: 16px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
+}
+.contacts-icon{
+	background:url(http://www.favicon.by/ico/59718b104f7df.ico) no-repeat left center; 
+    background-size: 16px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
+}
+.tracking-icon{
+	background:url(http://www.favicon.by/ico/59704b6ee91a5.ico) no-repeat left center; 
+    background-size: 16px; 
+    display:inline-block;
+    vertical-align:bottom;
+    padding-left: 25px;
 }
 main{
     padding-top: 100px;
@@ -30,6 +60,9 @@ main{
     width:100%;  
 }
 footer{
+	background-color: #212121;
+	color: #F5F5F5;
+	font-size: 70%;
     height:50px;
     width:100%;
    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);

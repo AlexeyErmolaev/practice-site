@@ -4,28 +4,32 @@
     <title></title>
 	<meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="StyleSheet1.css"/>
+
+<link href="css/StyleSheet1.css" type="text/css" rel="stylesheet"/>
 <style>
-a:hover{color : #0000d0;
-}
-a:active {
-    color: #f00;
+ A { 
+    text-decoration: none; 
    } 
+   A:visited { text-decoration: none; } 
+   A:active { text-decoration: none; color: gray;  }
+   A:hover {
+    text-decoration: underline; 
+    color: #84FFFF; 
+   }
 </style>
 </head>
-<link href="css/StyleSheet1.css" type="text/css" rel="stylesheet"/>
 <body>
         <header> 
 		<div id="logo">
-		<a href="Home.html"> <img src="img/logo.jpg" alt="" height="100%" width="50%" class="round" /> Грузоперевозки РТ</a>
+		<a href="Home.html"> <img src="img/logo.jpg" alt="" height="30%" width="30%" class="round" /> </a>
+		<a href="Home.html" position: left;>Грузоперевозки РТ</a>
 		</div>
-		<div class="header-center">
 		<nav>
-			<a href="#">Сделать заказ</a>
-			<a href="#">Цены</a>
-			<a href="#">Контакты</a>
-			<a href="#">Отслеживание заказа</a>
+			<a class="order-icon" href="#">Сделать заказ</a>
+			<a class="price-icon" href="#">Цены</a>
+			<a class="contacts-icon" href="#">Контакты</a>
+			<a class="tracking-icon" href="#">Отслеживание заказа</a>
 		</nav>
-	    </div>
 		</header>
         <main> 
 		</main>
