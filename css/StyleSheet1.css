@@ -1,12 +1,33 @@
 ﻿
-@media screen and (max-width:450px) {
-    .logo, .order-icon, .price-icon, .contacts-icon, .tracking-icon {
+@media screen and (max-width:850px) {
+    .header_logo-txt, .order-icon, .price-icon, .contacts-icon, .tracking-icon {
         display: none;
     }
 }
+html{
+    position: relative;
+    height: 100%;
+    min-width: 980px;
+    font: normal 15px Tahoma, Geneva, sans-serif;
+}
 body{
+	background: #512DA8;
 	font-size: 1.5em;
 	margin: 0;
+}
+.header_logo{
+	color: #CDDC39;
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPqG9941DDI6sY2L7JUUARt-lQ36G8F7YEA_Vs9V3uINYBaC8o3g) no-repeat;
+	height:100%;
+	width:20%;
+}
+.header_logo-img{
+	height:70%;
+	width:50%;
+}
+.header_logo-txt a{
+	color: #CDDC39;
+	font: normal 1em Tahoma, Geneva, sans-serif;
 }
 header{
 	display: flex;
@@ -18,6 +39,7 @@ header{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
     top:0;
     position: fixed;
+	z-index: 1000;
 }
 .order-icon, .price-icon, .contacts-icon, .tracking-icon, .price-zakaz-icon, .zakaz-icon
 { 
@@ -82,58 +104,71 @@ main{
 }
 .cd-main-nav-wrapper ul 
 {
-	    margin-top: -5px;
-    margin-bottom: -10px;
+	margin-top: -55px;
+    margin-bottom: -110px;
 }
 div.flex-container_elemen {
-position: fixed;
-top: 100px;
-padding: 20px;
+	position: fixed;
+	top: 100px;
+	padding: 20px;
+}
+.background-container{
+	width:1000px;
+}
+.image{
+	
 }
 .flex-container {
-	margin-left: 20%;
-  display: flex;
-  width: 10%;
-  height: 60%;
-  align-items: center;
-  padding: 50px;
-  text-align: justify;
+	background-size:100%;
+	margin-left: 30%;
+	display: flex;
+	width: 80%;
+	height: 60%;
+	align-items: center;
+	padding: 50px;
+	white-space: normal;
 }
 p{
 	padding:10px;
 }
 .flex-container_element-1 {
+	opacity: 0.8;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
 	background: #f3f3f3;
-  align-self: flex-start;
-  font-size: 1em;
+	align-self: flex-start;
+	font-size: 1em;
 } 
 .flex-container_element-2 {
+	opacity: 0.8;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-  align-self: flex-start;
-  background: #f3f3f3;
-  font-size: 1em;
+	align-self: flex-start;
+	background: #f3f3f3;
+	font-size: 1em;
 } 
 .flex-container_element-3 {
+	opacity: 0.8;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-  align-self: flex-start;
-  background: #f3f3f3;
-  font-size: 1em;
+	align-self: flex-start;
+	background: #f3f3f3;
+	font-size: 1em;
 }
 .flex-container_element-4 {
+	opacity: 0.8;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-  align-self: flex-start;
-  background: #f3f3f3;
-  font-size: 1em;
+	align-self: flex-start;
+	background: #f3f3f3;
+	font-size: 1em;
 }  
 .price-zakaz-icon{
 	background:url(http://www.favicon.by/ico/5973276099986.ico) no-repeat left center;
+	margin-bottom: 10px;
 }
 .zakaz-icon{
 	background:url(http://www.favicon.by/ico/59708e6dac5c6.ico) no-repeat left center;
+	margin-bottom: 10px;
 }
-@media screen and (max-width:350px){
-	
+.buttons{
+	display:inline;
 }
 footer{
 	background-color: #212121;
@@ -141,23 +176,23 @@ footer{
 	font-size: 70%;
     height:50px;
     width:100%;
-   box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 .topbutton {
-width:100px;
-border:2px solid #ccc;
-background:#f7f7f7;
-text-align:center;
-padding:10px;
-position:fixed;
-bottom:10px;
-right:10px;
-cursor:pointer;
-color:#333;
-font-family:verdana;
-font-size:12px;
-border-radius: 5px;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
--khtml-border-radius: 5px;
+	width:100px;
+	border:2px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:10px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+	color:#333;
+	font-family:verdana;
+	font-size:12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
 }
