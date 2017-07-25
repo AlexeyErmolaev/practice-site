@@ -104,7 +104,7 @@ main{
 .cd-main-nav{
 	font-family: fantasy;
 	font-size:20px;
-	width: 70%;
+	width:50%;
     display: block;
 }
 .cd-main-nav a{
@@ -124,6 +124,7 @@ main{
 }
 div.flex-container_elemen {
 	position: fixed;
+	margin-top:100px;
 	top: 0;
 	padding: 20px;
 }
@@ -135,7 +136,7 @@ div.flex-container_elemen {
 }
 .flex-container {
 	background-size:100%;
-	margin-left: 30%;
+	margin-left: 20%;
 	display: flex;
 	width: 80%;
 	height: 60%;
