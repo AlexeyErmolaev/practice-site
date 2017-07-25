@@ -1,4 +1,17 @@
 ﻿
+@media screen and (max-width: 500px) {
+    
+    nav label{
+         display: inline-block;
+    }
+    nav > ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ label + ul {
+        display: block;
+    }
+    
+}
 @media screen and (max-width:850px) {
     .header_logo-txt, .order-icon-txt, .price-icon-txt, .contacts-icon-txt, .tracking-icon-txt {
         display: none;
@@ -111,11 +124,11 @@ main{
 }
 div.flex-container_elemen {
 	position: fixed;
-	top: 100px;
+	top: 0;
 	padding: 20px;
 }
 .background-container{
-	width:1000px;
+	width:80%;
 }
 .image{
 	
@@ -179,6 +192,8 @@ footer{
     height:50px;
     width:100%;
 	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);
+	position:relative;
+	z-index:1000;
 }
 .topbutton {
 	width:100px;
