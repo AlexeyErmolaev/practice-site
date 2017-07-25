@@ -1,5 +1,4 @@
-﻿
-@media screen and (max-width:850px) {
+﻿@media screen and (max-width:850px) {
     .header_logo-txt, .order-icon-txt, .price-icon-txt, .contacts-icon-txt, .tracking-icon-txt {
         display: none;
     }
@@ -117,9 +116,6 @@ div.flex-container_elemen {
 }
 .background-container{
 	width:80%;
-}
-.image{
-	
 }
 .flex-container {
 	background-size:100%;
