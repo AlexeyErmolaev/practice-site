@@ -1,17 +1,4 @@
 ﻿
-@media screen and (max-width: 500px) {
-    
-    nav label{
-         display: inline-block;
-    }
-    nav > ul {
-        display: none;
-    }
-    input[type="checkbox"]:checked ~ label + ul {
-        display: block;
-    }
-    
-}
 @media screen and (max-width:850px) {
     .header_logo-txt, .order-icon-txt, .price-icon-txt, .contacts-icon-txt, .tracking-icon-txt {
         display: none;
