@@ -1,6 +1,6 @@
 ﻿
 @media screen and (max-width:850px) {
-    .header_logo-txt, .order-icon, .price-icon, .contacts-icon, .tracking-icon {
+    .header_logo-txt, .order-icon-txt, .price-icon-txt, .contacts-icon-txt, .tracking-icon-txt {
         display: none;
     }
 }
@@ -29,6 +29,9 @@ body{
 	color: #CDDC39;
 	font: normal 1em Tahoma, Geneva, sans-serif;
 }
+.order-background, .price-background, .tracking-background, .contacts-background {
+	display:inline;
+}
 header{
 	display: flex;
 	justify-content: space-between;
@@ -44,7 +47,6 @@ header{
 .order-icon, .price-icon, .contacts-icon, .tracking-icon, .price-zakaz-icon, .zakaz-icon
 { 
     background-size: 16px; 
-    display:inline-block;
     vertical-align:bottom;
     padding-left: 25px;
 }
