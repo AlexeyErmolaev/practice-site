@@ -3,6 +3,10 @@
         display: none;
     }
 }
+A 	{ text-decoration: none; } 
+	A:visited { text-decoration: none; } 
+	A:active { text-decoration: none; color: gray;  }
+	A:hover {text-decoration: none; color: #84FFFF; }
 html{
     position: relative;
     height: 100%;
@@ -14,26 +18,12 @@ body{
 	font-size: 1.5em;
 	margin: 0;
 }
-.header_logo{
-	color: #CDDC39;
-	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPqG9941DDI6sY2L7JUUARt-lQ36G8F7YEA_Vs9V3uINYBaC8o3g) no-repeat;
-	height:100%;
-	width:20%;
-}
-.header_logo-img{
-	height:70%;
-	width:50%;
-}
-.header_logo-txt a{
-	color: #CDDC39;
-	font: normal 1em Tahoma, Geneva, sans-serif;
-}
 .order-background, .price-background, .tracking-background, .contacts-background {
 	display:inline;
 }
 header{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	background-color: #FAFAFA;
     width:100%;
@@ -43,36 +33,13 @@ header{
     position: fixed;
 	z-index: 1000;
 }
-.order-icon, .price-icon, .contacts-icon, .tracking-icon, .price-zakaz-icon, .zakaz-icon
-{ 
-    background-size: 16px; 
-    vertical-align:bottom;
-    padding-left: 25px;
-}
-.round{
-	cursor: pointer;
-	border-radius: 50%;
-}
-.order-icon {
-    background:url(http://www.favicon.by/ico/59710a1e24838.ico) no-repeat left center; 
-}
-.price-icon{
-	background:url(http://www.favicon.by/ico/5973149c2f16f.ico) no-repeat left center; 
-}
-.contacts-icon{
-	background:url(http://www.favicon.by/ico/59718b104f7df.ico) no-repeat left center; 
-}
-.tracking-icon{
-	background:url(http://www.favicon.by/ico/59704b6ee91a5.ico) no-repeat left center; 
-}
 @media screen and (max-width:450px){
 	.order-icon, .price-icon, .contacts-icon, .tracking-icon{
 		display:none;
 	}
 }
 main{
-	display: flex;
-	justify-content: space-between;
+	
 	align-items: center;
     padding-top: 100px;
 	box-sizing: border-box;
@@ -82,92 +49,28 @@ main{
     width:100%; 
     overflow: auto;	
 }
-@media screen and (max-width:350px){
-	.cd-main-nav-wrapper{
-		position: relative;
-	}
-}
-.cd-main-nav{
-	font-family: fantasy;
-	font-size:20px;
-	width:50%;
-    display: block;
-}
-.cd-main-nav a{
-	width: 40%;
-    padding: 5px  0px ;
-    font-size: 1em;
-    text-decoration: none;
-    display: block;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    color: #424242;
-}
-.cd-main-nav-wrapper ul 
-{
-	margin-top: -55px;
-    margin-bottom: -110px;
-}
-div.flex-container_elemen {
-	position: fixed;
-	margin-top:100px;
-	top: 0;
-	padding: 20px;
-}
-.background-container{
+.conteiner-fluid{
+	background-color: #FAFAFA;
+	padding-left:15px;
+	padding-right:15px;
 	width:80%;
+	margin:0 auto;
 }
-.flex-container {
-	background-size:100%;
-	margin-left: 20%;
-	display: flex;
-	width: 80%;
-	height: 60%;
-	align-items: center;
-	padding: 50px;
-	white-space: normal;
-}
-p{
-	padding:10px;
-}
-.flex-container_element-1 {
-	opacity: 0.8;
+.col-sm-12, .col-sm-4, .col-sm-8{
+	flex-basis: 20%;
+	margin:10px;
+	padding:5px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-	background: #f3f3f3;
-	align-self: flex-start;
-	font-size: 1em;
-} 
-.flex-container_element-2 {
-	opacity: 0.8;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-	align-self: flex-start;
-	background: #f3f3f3;
-	font-size: 1em;
-} 
-.flex-container_element-3 {
-	opacity: 0.8;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-	align-self: flex-start;
-	background: #f3f3f3;
-	font-size: 1em;
 }
-.flex-container_element-4 {
-	opacity: 0.8;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
-	align-self: flex-start;
-	background: #f3f3f3;
-	font-size: 1em;
-}  
-.price-zakaz-icon{
-	background:url(http://www.favicon.by/ico/5973276099986.ico) no-repeat left center;
-	margin-bottom: 10px;
+.header-logo{
+	margin-right: 5%;
 }
-.zakaz-icon{
-	background:url(http://www.favicon.by/ico/59708e6dac5c6.ico) no-repeat left center;
-	margin-bottom: 10px;
+.row{
+	display:flex;
 }
 .buttons{
-	display:inline;
+	display:flex;
+	justify-content: space-between;
 }
 footer{
 	background-color: #212121;
