@@ -20,6 +20,9 @@
 	.conteiner-mobile, .col-xs-12{
 		display:none;
 	}
+	nav{
+		margin-left:360px;
+}
 }
 A 	{ text-decoration: none; } 
     a:link {color: #212121; padding: 3px; }
@@ -55,6 +58,44 @@ header{
     top:0;
     position: fixed;
 	z-index: 1000;
+}
+.about{
+	margin-right: 2%;
+    font: normal 14px Arial, Helvetica, sans-serif;
+    color: #424242;
+}
+form {
+  position: relative;
+  width: 25%;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+input {
+	border-radius:30px;
+  width: 100%;
+  height: 42px;
+  background: #F9F0DA;
+  padding-left: 15px;
+}
+button {
+	border-radius:30px;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #F15B42;
+  cursor: pointer;
+}
+button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #F9F0DA;
+  font-size: 20px;
+  font-weight: bold;
 }
 #header-logo{
 	height:100%;
