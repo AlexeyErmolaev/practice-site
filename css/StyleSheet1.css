@@ -18,9 +18,15 @@
 	.col-row{
 		background-image:url(../img/westcoast1.jpg);
 	}
+	.ticket-row{
+		float:left;
+	}
+	#sidebar-momile{
+		height:110px;
+	}
 }
 @media screen and (min-width:850px) {
-	.conteiner-mobile, .col-xs-12{
+	.conteiner-mobile, #sidebar-momile{
 		display:none;
 	}
 	nav{
@@ -173,6 +179,7 @@ p{
 	border-bottom: 2px solid maroon;
 }
 .panel-body{
+	align-items:inline;
 	font-family: Geneva;
 }
 .ticket-row{
