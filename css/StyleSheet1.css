@@ -115,9 +115,12 @@ button:before {
   font-size: 20px;
   font-weight: bold;
 }
+h1{
+	margin-left:5px;
+}
 #header-logo{
-	height:100%;
-	width:100px;
+	height:95%;
+	width:98px;
 	background-image: url(../img/logo.jpg);
 	border-radius:50%;
 }
@@ -141,7 +144,7 @@ main{
     overflow: auto;	
 }
 .conteiner-{
-	background:white;
+	background:#424242;
 	box-sizing: border-box;
 	font-family: Geneva;
 	width:100%;
