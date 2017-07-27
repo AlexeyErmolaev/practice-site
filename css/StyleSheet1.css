@@ -11,9 +11,8 @@
 	.fa{
 		display:none;
 	}
-	.conteiner-fluid{
+	.conteiner-{
 		min-width:100%;
-		box-sizing:border-box;
 	}
 	.col-row{
 		min-width: 95%;
@@ -141,7 +140,7 @@ main{
     width:100%; 
     overflow: auto;	
 }
-.conteiner-fluid{
+.conteiner-{
 	background:white;
 	box-sizing: border-box;
 	font-family: Geneva;
@@ -155,6 +154,7 @@ main{
 	background-color: #FAFAFA;
 }
 .col-row1, .col-row2, .col-row3{
+	flex:auto;
 	margin-bottom:5px;
 	margin-top:5px;
 	box-sizing:border-box;
@@ -191,6 +191,7 @@ img{
 	-webkit-background-size: cover;
 	margin: auto;
 	display:flex;
+	
 	flex-wrap:wrap;
 	width:90%;
 }
