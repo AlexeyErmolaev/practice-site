@@ -1,17 +1,47 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <meta name="viewport" content="width=700, initial-scale=1">
 	<title></title>
 	<meta charset="utf-8" />
 	<link href="css/StyleSheet1.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" href="css/font-awesome.css">
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.topbutton').mouseenter(function(){
+				$('.topbutton').fadeTo('faste', 1)
+			});
+			$('.topbutton').mouseleave(function(){
+				$('.topbutton').fadeTo('faste', 0.5)
+			});
+			$(".conteiner-sidebar #sidebar .panel-body .ticket-row1 i").click(function(){
+				$('.panel1').slideDown('slow')
+			});
+			$(".conteiner-sidebar #sidebar .panel-body .ticket-row2 i").click(function(){
+				$('.panel2').slideDown('slow')
+			});
+			$(".conteiner-sidebar #sidebar .panel-body .ticket-row3 i").click(function(){
+				$('.panel3').slideDown('slow')
+			});
+			$(".conteiner-sidebar #sidebar .panel-body .ticket-row4 i").click(function(){
+				$('.panel4').slideDown('slow')
+			});
+			$(".conteiner-sidebar #sidebar .panel-body .ticket-row5 i").click(function(){
+				$('.panel5').slideDown('slow')
+			});
+			$(".conteiner-sidebar #sidebar .panel-body .ticket-row6 i").click(function(){
+				$('.panel6').slideDown('slow')
+			});
+		});
+	</script>
 </head>
 <body>
 	<div class="conteiner-header">
 		<header> 
-			<a id="header-logo" href="Home.html"><div class="header-logo-txt"><h1>CarRow</h1></div></a>
+			<a id="header-logo"  href="Home.html"><div class="header-logo-txt"><h1>CarRow</h1></div></a>
 			<nav>
 				<div class="order-background">
 					<a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
@@ -35,7 +65,6 @@
 	<main> 
 		<div class="conteiner-">
 					<aside id="sidebar-momile" class="col-row1" >
-								<section ="panel">
 									<div class="panel-head">
 										<h5 class="panel-title">
 										Категории
@@ -46,6 +75,7 @@
 											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
 											<div class="ticked-pagetitle">
 												<a href="#">Иномарки</a>
+												<i class="fa fa-angle-double-down"  aria-hidden="true"></i>
 											</div>
 										</div>
 										<div class="ticket-row">
@@ -81,50 +111,85 @@
 									</div>	
 					</aside>
 			<div class="conteiner-sidebar">
-				<aside id="sidebar" >
-								<section ="panel">
+				<aside id="sidebar">
 									<div class="panel-head">
 										<h5 class="panel-title">
 										Категории
 										</h5>
 									</div>
 									<div class="panel-body">
-										<div class="ticket-row">
-											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
-											<div class="ticked-pagetitle">
-												<a href="#">Иномарки</a>
+										<div class="ticket-row1">
+											<div id="down">
+												<a href="#">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<div class="ticked-pagetitle">
+														<a href="#">Иномарки</a>
+													</div>
+												</a>	
 											</div>
+											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
-										<div class="ticket-row">
-											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
-											<div class="ticked-pagetitle">
-												<a href="#">Новые</a>
+										<div class="panel1"><p>В наличии: 142</p></div>
+										<div class="ticket-row2">
+											<div id="down">
+												<a href="#">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<div class="ticked-pagetitle">
+														<a href="#">Новые</a>
+													</div>
+												</a>	
 											</div>
+											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
-										<div class="ticket-row">
-											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
-											<div class="ticked-pagetitle">
-												<a href="#">С пробегом</a>
+										<div class="panel2"><p>В наличии: 98</p></div>
+										<div class="ticket-row3">
+											<div id="down">
+												<a href="#">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<div class="ticked-pagetitle">
+														<a href="#">С пробегом</a>
+													</div>
+												</a>	
 											</div>
+											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
-										<div class="ticket-row">
-											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
-											<div class="ticked-pagetitle">
-												<a href="#">Отечественные</a>
+										<div class="panel3"><p>В наличии: 44</p></div>
+										<div class="ticket-row4">
+											<div id="down">
+												<a href="#">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<div class="ticked-pagetitle">
+														<a href="#">Отечественные</a>
+													</div>
+												</a>	
 											</div>
+											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
-										<div class="ticket-row">
-											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
-											<div class="ticked-pagetitle">
-												<a href="#">Новые</a>
+										<div class="panel4"><p>В наличии: 325</p></div>
+										<div class="ticket-row5">
+											<div id="down">
+												<a href="#">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<div class="ticked-pagetitle">
+														<a href="#">Новые</a>
+													</div>
+												</a>	
 											</div>
+											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
-										<div class="ticket-row">
-											<a href="#"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></a>
-											<div class="ticked-pagetitle">
-												<a href="#">С пробегом</a>
+										<div class="panel5"><p>В наличии: 142</p></div>
+										<div class="ticket-row6">
+											<div id="down">
+												<a href="#">
+													<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+													<div class="ticked-pagetitle">
+														<a href="#">С пробегом</a>
+													</div>
+												</a>	
 											</div>
+											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel6"><p>В наличии: 183</p></div>
 									</div>	
 					</aside>
 			</div>
