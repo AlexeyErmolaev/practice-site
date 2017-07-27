@@ -2,7 +2,7 @@
     .header-logo-txt, .order-icon-txt, .price-icon-txt, .contacts-icon-txt, .tracking-icon-txt {
         display: none;
     }
-	.conteiner, .col-sm{
+	.conteiner, #sidebar{
 		display:none;
 	}
 	.buttons{
@@ -16,12 +16,18 @@
 		box-sizing:border-box;
 	}
 	.col-row{
+		min-width: 95%;
 		background-image:url(../img/westcoast1.jpg);
+	}
+	.col-row1, .conteiner-mobile{
+		min-width: 100%;
+		
 	}
 	.ticket-row{
 		float:left;
 	}
 	#sidebar-momile{
+		width:100%;
 		height:110px;
 	}
 }
@@ -31,6 +37,10 @@
 	}
 	nav{
 		margin-left:360px;
+	}
+	.col-row1, .col-row2, .col-row3{
+		margin-right:5px;
+		margin-left:5px;
 	}
 }
 A 	{ text-decoration: none; } 
@@ -132,21 +142,25 @@ main{
     overflow: auto;	
 }
 .conteiner-fluid{
-	background:#424242;
+	background:white;
 	box-sizing: border-box;
 	font-family: Geneva;
 	width:100%;
 	margin:0 auto;
 }
 .conteiner{
-	width:80%;
+	box-sizing:border-box;
+	float:right;
+	width:85%;
 	background-color: #FAFAFA;
 }
 .col-row1, .col-row2, .col-row3{
+	margin-bottom:5px;
+	margin-top:5px;
+	box-sizing:border-box;
+	width: 23.8%;
 	opacity:0.91;
 	border-radius:10px;
-	margin:10px;
-	padding:5px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .col-row3{
@@ -159,18 +173,26 @@ main{
 	background-color: #E3F2FD;
 }
 #sidebar { 
-box-shadow:-25px 25px 5px rgba(0, 0, 0, 0.1);
-background-color: #E3F2FD;
-	width: 190px; 
-	float: right;
-height:100%;	
-border-radius:10px;
+	box-shadow:-25px 25px 5px rgba(0, 0, 0, 0.1);
+	background-color: #E3F2FD;
+	width: 15%; 
+	float: left;
+	height:100%;	
+	border-radius:10px;
+}
+img{
+	max-width:100%;
 }
 .row{
 	background-image:url(../img/westcoast.jpg);
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	-webkit-background-size: cover;
 	margin: auto;
 	display:flex;
-	width: 70%;
+	flex-wrap:wrap;
+	width:90%;
 }
 p{
 	font-style: italic;
