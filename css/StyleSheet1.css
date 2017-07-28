@@ -2,17 +2,8 @@
     .header-logo-txt, .order-icon-txt, .price-icon-txt, .contacts-icon-txt, .tracking-icon-txt {
         display: none;
     }
-	.conteiner, #sidebar{
+	.conteiner-row, #sidebar, .buttons, .fa{
 		display:none;
-	}
-	.buttons{
-		display:none;
-	}
-	.fa{
-		display:none;
-	}
-	.conteiner-{
-		min-width:100%;
 	}
 	.col-row{
 		min-width: 95%;
@@ -146,17 +137,20 @@ main{
     width:100%; 
     overflow: auto;	
 }
-.conteiner-{
-	background:#424242;
-	box-sizing: border-box;
-	font-family: Geneva;
+.conteiner-sm{
+	display:flex;
+	flex-wrap:wrap;
 	width:100%;
-	margin:0 auto;
+	height:100%;
+}
+.conteiner-sidebar{
+	float:left;
+	width:15%;
+	min-height:100%;
 }
 .conteiner{
 	box-sizing:border-box;
-	float:right;
-	width:85%;
+	width:100%;
 	background-color: #FAFAFA;
 }
 .col-row1, .col-row2, .col-row3{
@@ -181,7 +175,7 @@ main{
 #sidebar { 
 	box-shadow:-25px 25px 5px rgba(0, 0, 0, 0.1);
 	background-color: #E3F2FD;
-	width: 15%; 
+	width: 100%; 
 	float: left;
 	height:100%;	
 	border-radius:10px;
@@ -204,16 +198,16 @@ p{
 	font-family: 'Comfortaa', cursive;
 	font-size:0.8em;
 }
+.conteiner-row{
+	width:85%;
+}
 .row{
 	background-image:url(../img/westcoast.jpg);
-	background-size: cover; 
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	-webkit-background-size: cover;
 	margin: auto;
 	display:flex;
+	justify-content:flex-end;
 	flex-wrap:wrap;
-	width:90%;
+	width:100%;
 }
 p{
 	font-style: italic;

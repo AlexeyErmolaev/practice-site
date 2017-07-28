@@ -11,13 +11,15 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('.topbutton').mouseenter(function(){
-				$('.topbutton').fadeTo('faste', 1)
-			});
-			$('.topbutton').mouseleave(function(){
-				$('.topbutton').fadeTo('faste', 0.5)
-			});
-			$('.conteiner-sidebar #sidebar .panel-body .ticket-row1').click(function(){
+			$('.topbutton').hover(
+				function(){
+				$(this).fadeTo('faste', 1)
+				},
+				function(){
+				$(this).fadeTo('faste', 0.5)
+			}
+			);
+			$('conteiner, .conteiner-sm .conteiner-sidebar #sidebar .panel-body .ticket-row1').click(function(){
 				$('.panel1').toggle();
 				$('.conteiner-sidebar #sidebar .panel-body .ticket-row1 #up').toggle();
 				$('.conteiner-sidebar #sidebar .panel-body .ticket-row1 #dowm').toggle();
@@ -46,7 +48,7 @@
 				$('.panel6').toggle();
 				$('.conteiner-sidebar #sidebar .panel-body .ticket-row6 #up').toggle();
 				$('.conteiner-sidebar #sidebar .panel-body .ticket-row6 #dowm').toggle();
-			});
+			} 	);
 			$('#button').click(function(){
 				var search = $('input[name=checkList]').val();
 				alert(search);
@@ -79,7 +81,7 @@
 		</header>
 	</div>	
 	<main> 
-		<div class="conteiner-">
+		<div class="conteiner">
 					<aside id="sidebar-momile" class="col-row1" >
 									<div class="panel-head">
 										<h5 class="panel-title">
@@ -126,8 +128,10 @@
 										</div>
 									</div>	
 					</aside>
-			<div class="conteiner-sidebar">
-				<aside id="sidebar">
+			
+			<div class="conteiner-sm">
+				<div class="conteiner-sidebar">
+					<aside id="sidebar">
 									<div class="panel-head">
 										<h5 class="panel-title">
 										Категории
@@ -214,109 +218,109 @@
 										<div class="panel6"><p>В наличии: 300</p></div>
 									</div>	
 					</aside>
-			</div>
-			<div class="conteiner">
-				<div class="row">
-					<div class="col-row1">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>	
-					<p>
-						Мы имеем собственный  
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>
-					<div class="col-row1">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>	
-					<p>
-						Мы имеем собственный  
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>
-					<div class="col-row1">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>
-					<p >
-						Любая транспортировка 
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>
-					<div class="col-row1">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>
-					<p >
-						Малогабаритные перевозки 
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>
 				</div>
-				<div class="row">
-					<div class="col-row2">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>
-					<p>
-						Мы имеем собственный  
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+				<div class="conteiner-row">
+					<div class="row">
+						<div class="col-row1">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>	
+						<p>
+							Мы имеем собственный  
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
+						<div class="col-row1">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>	
+						<p>
+							Мы имеем собственный  
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
+						<div class="col-row1">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>
+						<p >
+							Любая транспортировка 
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
+						<div class="col-row1">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>
+						<p >
+							Малогабаритные перевозки 
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
 					</div>
+					<div class="row">
+						<div class="col-row2">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>
+						<p>
+							Мы имеем собственный  
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
+						<div class="col-row2">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>
+						<p>
+							Мы имеем собственный  
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
+						<div class="col-row2">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>
+						<p >
+							Любая транспортировка 
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>  
+						<div class="col-row2">
+							<a href="#"><img src="img/car2.png"  
+							alt="Иллюстрация" ></a>
+						<h4>Наша компания </h4>
+						<p >
+							Малогабаритные перевозки 
+						</p>
+						<div class="buttons">
+							<p class="price">587.956$</p>
+							<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
+						</div>
+						</div>
 					</div>
-					<div class="col-row2">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>
-					<p>
-						Мы имеем собственный  
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>
-					<div class="col-row2">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>
-					<p >
-						Любая транспортировка 
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>  
-					<div class="col-row2">
-						<a href="#"><img src="img/car2.png"  
-						alt="Иллюстрация" ></a>
-					<h4>Наша компания </h4>
-					<p >
-						Малогабаритные перевозки 
-					</p>
-					<div class="buttons">
-						<p class="price">587.956$</p>
-						<p><a href="#"><i class="fa fa-shopping-basket" href="#" aria-hidden="true"></i></a></p>
-					</div>
-					</div>
-				</div>
-				<div class="row">
+					<div class="row">
 					<div class="col-row3">
 						<a href="#"><img src="img/car2.png"  
 						alt="Иллюстрация" ></a>
@@ -366,7 +370,7 @@
 					</div>
 					</div>
 				</div>
-			</div>	
+				</div>
 			<div class="conteiner-mobile">
 					<div class="col-row">
 					<div class="col-row1">
