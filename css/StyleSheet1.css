@@ -69,7 +69,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #FAFAFA;
+	background-color: #18FFFF;
     width:100%;
     height:100px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -116,6 +116,7 @@ button:before {
   font-weight: bold;
 }
 h1{
+	color:#FFAB40;
 	margin-left:5px;
 }
 #header-logo{
@@ -123,6 +124,7 @@ h1{
 	width:98px;
 	background-image: url(../img/logo.jpg);
 	border-radius:50%;
+	box-shadow: 0px 0px 100px 21px #ff8000;
 }
 .header-logo-txt{
 	margin-left:100px;
@@ -195,6 +197,13 @@ img{
 	margin:0;
 	height:30px;
 }
+#up{
+	display:none;
+}
+p{
+	font-family: 'Comfortaa', cursive;
+	font-size:0.8em;
+}
 .row{
 	background-image:url(../img/westcoast.jpg);
 	background-size: cover; 
@@ -216,7 +225,7 @@ p{
 	width:95%;
 	font-family: Geneva;
 }
-#down{
+#ticked{
 	display:flex;
 }
 .ticket-row, .ticket-row1, .ticket-row2, .ticket-row3, .ticket-row4, .ticket-row5, .ticket-row6{
