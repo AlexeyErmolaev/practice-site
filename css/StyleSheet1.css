@@ -43,10 +43,9 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	text-align: center;
-    font: normal 15px Tahoma, Geneva, sans-serif, San Francisco, Roboto, Segoe UI;
+    font: normal  Tahoma, Geneva, sans-serif, San Francisco, Roboto, Segoe UI;
 }
 body{
-	background: #512DA8;
 	font-size: 1.5em;
 	margin: 0px auto;
 }
@@ -173,11 +172,10 @@ main{
 	background-color: #E3F2FD;
 }
 #sidebar { 
-	box-shadow:-25px 25px 5px rgba(0, 0, 0, 0.1);
 	background-color: #E3F2FD;
 	width: 100%; 
 	float: left;
-	height:100%;	
+	height:auto;	
 	border-radius:10px;
 }
 img{
@@ -203,9 +201,7 @@ p{
 }
 .row{
 	background-image:url(../img/westcoast.jpg);
-	margin: auto;
 	display:flex;
-	justify-content:flex-end;
 	flex-wrap:wrap;
 	width:100%;
 }
@@ -216,7 +212,7 @@ p{
 	border-bottom: 2px solid maroon;
 }
 .panel-body{
-	width:95%;
+	width:100%;
 	font-family: Geneva;
 }
 #ticked{
