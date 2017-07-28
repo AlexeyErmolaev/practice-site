@@ -17,41 +17,23 @@
 			$('.topbutton').mouseleave(function(){
 				$('.topbutton').fadeTo('faste', 0.5)
 			});
-			$(".conteiner-sidebar #sidebar .panel-body .ticket-row1 i").click(function(){
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row1').after('<div class="panel1"><p>В наличии: 183</p></div>')
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row1 i').click(function(){
-					$('.panel1').remove();
-				});	
+			$('.conteiner-sidebar #sidebar .panel-body .ticket-row1').click(function(){
+				$('.panel1').toggle();
+			});	
+			$('.conteiner-sidebar #sidebar .panel-body .ticket-row2').click(function(){
+				$('.panel2').toggle();
+			});	
+			$('.conteiner-sidebar #sidebar .panel-body .ticket-row3').click(function(){
+				$('.panel3').toggle();
 			});
-			$(".conteiner-sidebar #sidebar .panel-body .ticket-row2 i").click(function(){
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row2').after('<div class="panel2"><p>В наличии: 20</p></div>')
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row2 i').click(function(){
-					$('.panel2').remove();
-				});	
-			});
-			$(".conteiner-sidebar #sidebar .panel-body .ticket-row3 i").click(function(){
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row3').after('<div class="panel3"><p>В наличии: 163</p></div>')
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row3 i').click(function(){
-					$('.panel3').remove();
-				});	
-			});
-			$(".conteiner-sidebar #sidebar .panel-body .ticket-row4 i").click(function(){
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row4').after('<div class="panel4"><p>В наличии: 183</p></div>')
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row4 i').click(function(){
-					$('.panel4').remove();
-				});	
-			});
-			$(".conteiner-sidebar #sidebar .panel-body .ticket-row5 i").click(function(){
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row5').after('<div class="panel5"><p>В наличии: 100</p></div>')
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row5 i').click(function(){
-					$('.panel5').remove();
-				});	
-			});
-			$(".conteiner-sidebar #sidebar .panel-body .ticket-row6 i").click(function(){
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row6').after('<div class="panel6"><p>В наличии: 83</p></div>')
-				$('.conteiner-sidebar #sidebar .panel-body .ticket-row6 i').click(function(){
-					$('.panel6').remove();
-				});	
+			$('.conteiner-sidebar #sidebar .panel-body .ticket-row4').click(function(){
+				$('.panel4').toggle();
+			});	
+			$('.conteiner-sidebar #sidebar .panel-body .ticket-row5').click(function(){
+				$('.panel5').toggle();
+			});	
+			$('.conteiner-sidebar #sidebar .panel-body .ticket-row6').click(function(){
+				$('.panel6').toggle();
 			});
 		});
 	</script>
@@ -147,6 +129,7 @@
 											</div>
 											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel1"><p>В наличии: 183</p></div>
 										<div class="ticket-row2">
 											<div id="down">
 												<a href="#">
@@ -158,6 +141,7 @@
 											</div>
 											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel2"><p>В наличии: 50</p></div>
 										<div class="ticket-row3">
 											<div id="down">
 												<a href="#">
@@ -169,6 +153,7 @@
 											</div>
 											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel3"><p>В наличии: 133</p></div>
 										<div class="ticket-row4">
 											<div id="down">
 												<a href="#">
@@ -180,6 +165,7 @@
 											</div>
 											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel4"><p>В наличии: 500</p></div>
 										<div class="ticket-row5">
 											<div id="down">
 												<a href="#">
@@ -191,6 +177,7 @@
 											</div>
 											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel5"><p>В наличии: 200</p></div>
 										<div class="ticket-row6">
 											<div id="down">
 												<a href="#">
@@ -202,6 +189,7 @@
 											</div>
 											<i class="fa fa-angle-double-down" alt="menu-image" aria-hidden="true"></i>
 										</div>
+										<div class="panel6"><p>В наличии: 300</p></div>
 									</div>	
 					</aside>
 			</div>
