@@ -92,6 +92,48 @@ p#price{
 	margin-top:10px;
 	margin-bottom:0px;
 }
+.left-sidebar{
+	float:left;
+	width:18%;
+	min-height:100%;
+}
+li {
+    list-style-type: none;
+	padding-top:2px;
+	
+}
+.menu{
+	padding-bottom:10px;
+	padding-left:10px;
+}
+.choice{
+	padding-left:5px;
+	padding-top:10px;
+}
+.menu li a{
+	color:#616161;
+	 font-weight: bold;
+	 font-style: italic;
+	 text-transform: uppercase;
+}
+.menu li a:hover{
+	font-family: 'Julee', cursive;
+	color: #000000;
+	text-decoration:none;
+}
+.fa{
+	color:black;
+}
+i{
+	padding-right:5px;
+}
+.menu img{
+	padding-right:5px;
+}
+.content{
+	max-width:80%;
+	float:right;
+}
 footer{
 	background-color: #212121;
 	color: #F5F5F5;
@@ -104,27 +146,29 @@ footer{
 .pull-left{
 	margin-left:20px;
 }
-@media only screen and (min-width:992 and max-width : 1200px){
+@media only screen and (max-width : 1200px){
 	.card{
 		min-height:253px;
 	}
+	li.dropdown{
+		display:none;
+	}
 }
-@media screen and(min-width:768 and max-width:992){
-	.glyphicon-search{
-		display:block;
-	}	
-	img{
+@media only screen and (max-width : 992px){
+	.card a img{
 		min-width:100%;
-		min-height:auto;
 	}
 	.card{
-		min-height:330px;
+		min-height:337px;
 	}
-	.navbar-form{
-		display:none;
-		position:absolute;
-		top:50px;
-		right:0;
+	li.dropdown{
+		display:block;
+	}
+	.left-sidebar{
+	display:none;
+	}
+	.content{
+		max-width:100%;
 	}
 }
 @media only screen and (max-width : 768px){
@@ -150,7 +194,11 @@ footer{
 		margin: 0 0 10px;
 	}
 	.card{
+		min-height:auto;
 		display:flex;
 		margin-bottom:20px;
+	}
+	.content{
+		max-width:100%;
 	}
 }
