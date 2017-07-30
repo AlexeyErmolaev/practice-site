@@ -7,7 +7,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 	color: #868585;
-	background-color:#fdfcfb;
+	background-color:#E0E0E0;
 	font-weight:normal;
 }
 header{
@@ -21,12 +21,23 @@ img{
 	max-width:100%;
 	height:auto;
 }
+.menu-head{
+	background-color:#FF7043;
+	border: 0;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .menu{
+	background-color:#FFFFFF;
 	border: 0;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .menu .container{
 	position:relative;
+}
+.txt{
+	font-weight: bold;
+	font-style:oblique;
+	color:#FFFFFF;
 }
 .navbar-brand{
 	display:flex;
@@ -37,19 +48,26 @@ img{
 	height:38px;
 	background-image: url(../img/logo.png);
 }
-.navbar-nav > li > a{
+.collapse .navbar-nav > li > a{
+	font-weight: bold;
+	font-style:oblique;
+	color:#FFFFFF;
 	text-transform:uppercase;
 }
 .navbar-nav > li.active-link > a{
-	border-bottom: 1px solid #d42819;
+	font-weight: bold;
+	font-style:oblique;
+	color:#FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
 }
  .navbar-nav>li>a:hover{
-	border-bottom: 1px solid #d42819;
+	border-bottom: 1px solid #FFFFFF;
 }
 .navbar-nav > .dropdown > .dropdown-menu >li>a:hover{
 	border-bottom: 1px solid #d42819;
 }
 .card{
+	background-color:#FFFFFF;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .card a:hover img{
@@ -145,7 +163,7 @@ i{
 footer{
 	background-color: #212121;
 	color: #F5F5F5;
-    height:30px;
+    height:60px;
 	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
