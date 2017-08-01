@@ -69,9 +69,6 @@ img{
  .navbar-nav>li>a:hover{
 	border-bottom: 1px solid #FFFFFF;
 }
-.navbar-nav > .dropdown > .dropdown-menu >li>a:hover{
-	border-bottom: 1px solid #d42819;
-}
 .card{
 	background-color:#FFFFFF;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -150,7 +147,6 @@ li {
 	 text-transform: uppercase;
 }
 .menu li a:hover{
-	font-family: 'Julee', cursive;
 	color: #000000;
 	text-decoration:none;
 }
@@ -173,12 +169,45 @@ footer{
     height:60px;
 	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.topbutton{
+	position:fixed;
+}
 .pull-right{
-	margin-right:20px;
+	top: 530px;
+    bottom: 0px;
+    right: 200px;
 }
 .pull-left{
 	margin-left:20px;
+}
+.car-el-head{
+	width:93%;
+	overflow:hidden;
+}
+.car-el{
+	display:flex;
+	justify-content:space-between;
+}
+.carousel-arrow-left i, .carousel-arrow-right i{
+	margin-top:85px;
+}
+.carousel-arrow-left i:hover, .carousel-arrow-right i:hover{
+	cursor:pointer;
+}
+.crousel-item{
+	margin-right:10px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+.carousel{
+	position:relative;
+	padding-left:0px;
+	padding-right:0px;
+	display:-webkit-box;
+	min-height:80%;
+	min-width:100%;
 }
 @media only screen and (max-width : 1900px){
 	li.dropdown{
@@ -253,12 +282,27 @@ footer{
 }
 @media only screen and (max-width : 480px){
 	#about{
+		font-size:0.9em;
+		margin-top:0px;
+	}
+	.car-el{
 		display:none;
 	}
-	p#price{
-		margin-top:100px;
+	.pagination li a{
+		margin-right:5px;
 	}
-	#buy{
-		margin-top: 10%;
+	.pull-right{
+		margin-right:0;
+	}
+	.copyright{
+		font-size:0.8em;
+		margin-left:0;
+	}
+	h5{
+		margin-bottom:0;
+		margin-top;0;
+	}
+	p#price{
+		margin-top:2px;
 	}
 }
