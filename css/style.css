@@ -209,6 +209,42 @@ footer{
 	min-height:80%;
 	min-width:100%;
 }
+.contacts{
+	background-image: url(../img/fon.jpg);
+	background-size: cover;
+	min-width:100%;
+	min-height: 100%;
+}
+p#contacns {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: lightgray;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+iframe{
+	border-radius: 10px;
+}
+.map{
+	    max-width: 800px;
+	    padding-left: 40px;
+}
+.contacts-contein {
+    display: flex;
+}
+.contacts-txt{
+	padding-top: 100px;
+	padding-left: 40px;
+}
+.contacts-txt p{
+	font-size: 1.6em;
+}
+p#time {
+    width: fit-content;
+    text-align: end;
+}
 @media only screen and (max-width : 1900px){
 	li.dropdown{
 		display:none;
@@ -221,6 +257,9 @@ footer{
 	
 	li.dropdown{
 		display:none;
+	}
+	iframe{
+		max-width: 500px;
 	}
 }
 @media only screen and (max-width : 992px){
@@ -244,6 +283,9 @@ footer{
 	}
 	.navbar-form{
 		display:none;
+	}
+	iframe{
+		max-width: 300px;
 	}
 }
 @media only screen and (max-width : 768px){
@@ -278,6 +320,19 @@ footer{
 	}
 	.content{
 		max-width:100%;
+	}
+	.contacts-contein{
+		display: block;
+	}
+	p#contacns{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	iframe{
+		max-width: 400px;
+	}
+	.contacts-txt{
+		padding-top: 10px;
 	}
 }
 @media only screen and (max-width : 480px){
