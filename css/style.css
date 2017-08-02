@@ -166,7 +166,7 @@ i{
 footer{
 	background-color: #212121;
 	color: #F5F5F5;
-    height:60px;
+    height:auto;
 	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3), 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 .topbutton{
@@ -230,6 +230,7 @@ iframe{
 .map{
 	    max-width: 800px;
 	    padding-left: 40px;
+	    padding-bottom: 20px;
 }
 .contacts-contein {
     display: flex;
@@ -244,6 +245,36 @@ iframe{
 p#time {
     width: fit-content;
     text-align: end;
+}
+.icon-bar a i{
+	cursor: auto;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+.copyright{
+	width: 22%;
+	padding-bottom: 5px;
+}
+.conteiner{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-size: cover;
+}
+.footerTop{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+.footerTop__linksColumn ul li a{
+	color: #616161;
+}
+.footerTop__linksColumn h4{
+	text-align: center;
+}
+.footerTop__linksColumn ul li a:hover{
+	color: #FFFFFF;
+	text-decoration:none;
 }
 @media only screen and (max-width : 1900px){
 	li.dropdown{
