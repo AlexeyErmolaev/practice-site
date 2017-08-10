@@ -1,0 +1,90 @@
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    max-width: 80%;
+    float: right;
+}
+
+#buy {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p#price {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: none;
+}
+
+.row2 .card {
+    min-height: 280px;
+}
+
+.pager-nav {
+    text-align: center;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #BBDEFB;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    color: #FF8A65;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    color: #424242
+}
+
+.pagination a {
+    border-radius: 5px;
+    margin: 0 8px;
+}
+
+.pagination a.active {
+    border-radius: 5px;
+}
+
+.h5,
+h5,
+p {
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card a:hover img {
+    border-radius: 30px;
+    transition: all.5s;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.1);
+}

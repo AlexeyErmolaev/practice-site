@@ -1,0 +1,38 @@
+.car-el-head {
+    width: 93%;
+    overflow: hidden;
+}
+
+.car-el {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-arrow-left i,
+.carousel-arrow-right i {
+    margin-top: 85px;
+}
+
+.carousel-arrow-left i:hover,
+.carousel-arrow-right i:hover {
+    cursor: pointer;
+}
+
+.crousel-item {
+    margin-right: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-arrow-left,
+.carousel-arrow-right {
+    float: left;
+}
+
+.carousel {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: -webkit-box;
+    min-height: 80%;
+    min-width: 100%;
+}

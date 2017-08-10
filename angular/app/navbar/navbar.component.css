@@ -1,0 +1,61 @@
+.navbar-brand {
+    display: flex;
+    padding-right: 50px;
+}
+
+.collapse .navbar-nav>li>a {
+    font-weight: bold;
+    font-style: oblique;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.menu-head {
+    background-color: #FF7043;
+    border: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glyphicon-search {
+    line-height: 50px;
+    font-size: 25px;
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.txt {
+    font-weight: bold;
+    font-style: oblique;
+    color: #FFFFFF;
+}
+
+.brand {
+    width: 64px;
+    height: 38px;
+    background-image: url(../img/logo.png);
+}
+
+.navbar-nav>li.active-link>a {
+    font-weight: bold;
+    font-style: oblique;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.navbar-nav>li>a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.fa {
+    color: black;
+}
+
+i {
+    padding-right: 5px;
+}
+
+button.btn.btn-default {
+    margin-bottom: 10px;
+}

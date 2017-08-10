@@ -1,0 +1,55 @@
+.topbutton {
+    position: fixed;
+}
+
+.pull-right {
+    top: 530px;
+    bottom: 0px;
+    right: 200px;
+}
+
+.pull-left {
+    margin-left: 20px;
+}
+
+.icon-bar a i {
+    cursor: auto;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+
+.copyright {
+    width: 22%;
+    padding-bottom: 5px;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-size: cover;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footerTop__linksColumn ul li a {
+    color: #616161;
+}
+
+.footerTop__linksColumn h4 {
+    text-align: center;
+}
+
+.footerTop__linksColumn ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 2px;
+}

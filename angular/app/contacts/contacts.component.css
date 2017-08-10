@@ -1,0 +1,44 @@
+.contacts {
+    background-image: url(../img/fon.jpg);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+p#contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: lightgray;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.map {
+    max-width: 800px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.contacts-contein {
+    display: flex;
+}
+
+.contacts-txt {
+    padding-top: 100px;
+    padding-left: 40px;
+}
+
+.contacts-txt p {
+    font-size: 1.6em;
+}
+
+p#time {
+    width: fit-content;
+    text-align: end;
+}
