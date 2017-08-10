@@ -8,12 +8,6 @@ $(function() {
         }
     });
 });
-
-
-
-
-
-
 // скролл по якорю
 $(document).ready(function() {
     $('a[href^="#"]').click(function() {
