@@ -1,1570 +1,1583 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
-	<link href="css/style.css" type="text/css" rel="stylesheet"/>
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/home.js"></script>
-  </head>
-  <body>
-    
-	<header>
-		<nav class="navbar navbar-default menu-head" >
-		  <div class="container" >
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header" >
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-default menu-head">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand" href="index.html"><div class="brand"></div><div class="txt" >CarRow</div></a>
-			</div>
+                    <a class="navbar-brand" href="index.html">
+                        <div class="brand"></div>
+                        <div class="txt">CarRow</div>
+                    </a>
+                </div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			  <ul class="nav navbar-nav" >
-				<li class="active-link" ><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Главная <span class="sr-only">(current)</span></a></li>
-				<li><a href="#contacts"><i class="fa fa-address-book" aria-hidden="true"></i>Контакты</a></li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>Категории <span class="caret"></span></a>
-				  <ul class="dropdown-menu">
-					<li><a href="#motorcycle"><i class="fa fa-motorcycle" aria-hidden="true"></i>Мотоциклы</a></li>
-					<li><a  href="#"><i class="fa fa-car" aria-hidden="true"></i>Легковые</a></li>
-					<li><a  href="#truck"><i class="fa fa-truck" aria-hidden="true"></i>Грузовые</a></li>
-					<li><a  href="#all-terrain-vehicle"><img src="img/квадроцикл.jpg">Квадроциклы</a></li>
-					<li><a  href="#yacht"><img src="img/яхта.jpg">Водная техника</a></li>
-				  </ul>	
-				</li>
-			  </ul>
-			  <form class="navbar-form navbar-left">
-				<div class="form-group" >
-				  <input type="text" class="form-control" placeholder="Search">
-				</div>
-				<button type="submit" class="btn btn-default">Найти</button>
-			  </form>
-			  
-			</div><!-- /.navbar-collapse -->
-				<span class="glyphicon glyphicon-search" ></span>
-		  </div><!-- /.container -->
-		</nav>
-	</header>
-	<main>
-		<div class="car-el" id="anchor">
-			<div class="carousel-arrow-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
-			<div class="car-el-head">
-				<ul class="carousel">
-					<li class="crousel-item"><a href="#"><img src="img/car/civic2.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/car/bug.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/motorcycle/bike10.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/car/7.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/yacht1.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/car/5.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/truck/truck5.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/car/7.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/car/4.jpg"></a></li>
-					<li class="crousel-item"><a href="#"><img src="img/car/6.jpg"></a></li>
-				</ul>
-			</div>
-			<div class="carousel-arrow-right"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
-		</div>
-		<div class="container">
-			<div class="left-sidebar">
-				<ul class="menu">
-				<li><a href="#">Категории </a></li>
-				<li class="choice"><a href="#motorcycle"><i class="fa fa-motorcycle" ></i>Мотоциклы</a><p>98</p></li>
-				<li class="choice"><a href="#"><i class="fa fa-car"></i>Легковые</a><p>543</p></li>
-				<li class="choice"><a href="#truck"><i class="fa fa-truck"></i>Грузовые</a><p>102</p></li>
-				<li class="choice"><a href="#all-terrain-vehicle"><img src="img/квадроцикл.jpg">Квадроциклы</a><p>25</p></li>
-				<li class="choice"><a href="#yacht"><img src="img/яхта.jpg">Водная техника</a><p>32</p></li>
-				</ul>
-			</div>
-			<div class="content">
-				<div class="row1" id="car" >
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Accord, 2011</h5>
-								<p id="price">699 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/civic.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Civic, 2008</h5>
-								<p id="price">420 000 руб.</p>
-							</a>
-							<p id="about">129 000 км, 1.8 AT (140 л.с.), седан, передний, бензин</p>
-						</div>
-						
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/cr-v.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda CR-V, 2013</h5>
-								<p id="price">1 140 000 руб.</p>
-							</a>
-							<p id="about">44 200 км, 2.0 MT (150 л.с.), универсал, полный, бензин</p>
-						</div>
-						
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/pilot.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">179 000 км, 3.5 AT (257 л.с.), внедорожник, полный, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="clearfix">
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="clearfix">
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-				</div>
-				<div class="row2">
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Lexus GS300, 2007.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Lexus GS300, 2007</h5>
-			                    <p id="price">699 999 руб.</p>
-			                </a>
-			                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/LADA (ВАЗ) 2105, 1997.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>LADA (ВАЗ) 2105, 1997</h5>
-			                    <p id="price">98 000 руб.</p>
-			                </a>
-			                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
-			            </div>
-			            
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/peugeot 308, 2008.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Peugeot 308, 2008</h5>
-			                    <p id="price">300 000руб.</p>
-			                </a>
-			                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
-			            </div>
-			            
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Chevrolet Lanos, 2008.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Chevrolet Lanos, 2008</h5>
-			                    <p id="price">150 000 руб.</p>
-			                </a>
-			                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Land Rover Range Rover Sport, 2015.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Land Rover Range Rover Sport, 2015</h5>
-			                    <p id="price">3 260 000 руб.</p>
-			                </a>
-			                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Opel Astra, 2013.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Opel Astra, 2013</h5>
-			                    <p id="price">449 000 руб.</p>
-			                </a>
-			                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Peugeot 308, 2010.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Peugeot 308, 2010</h5>
-			                    <p id="price">290 000 руб.</p>
-			                </a>
-			                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Volkswagen Touareg, 2004.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Volkswagen Touareg, 2004</h5>
-			                    <p id="price">600 000 руб.</p>
-			                </a>
-			                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Dodge Grand Caravan, 2003.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Dodge Grand Caravan, 2003</h5>
-			                    <p id="price">380 000 руб.</p>
-			                </a>
-			                <p id="about">3.8 л (218 л.с.), бензин, автомат, передний, 185 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Лада 2113, 2012.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Лада 2113, 2012</h5>
-			                    <p id="price">167 000 руб.</p>
-			                </a>
-			                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/Quicksilver 340 Sport + tohatsu M 15D2.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Quicksilver 340 Sport</h5>
-			                    <p id="price">390 000 руб.</p>
-			                </a>
-			                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			        <div class="card">
-			            <a href="#"><img src="img/Гидроцикл yamaha VX 700.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Гидроцикл yamaha VX 700</h5>
-			                    <p id="price">285 000 руб.</p>
-			                </a>
-			                <p id="about">Гидроцикл yamaha VX 700</p>
-			            </div>
-			        </div>
-			    	</div>
-				</div>
-				<div class="row3">
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Accord, 2011</h5>
-								<p id="price">699 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/civic.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Civic, 2008</h5>
-								<p id="price">420 000 руб.</p>
-							</a>
-							<p id="about">129 000 км, 1.8 AT (140 л.с.), седан, передний, бензин</p>
-						</div>
-						
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/cr-v.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda CR-V, 2013</h5>
-								<p id="price">1 140 000 руб.</p>
-							</a>
-							<p id="about">44 200 км, 2.0 MT (150 л.с.), универсал, полный, бензин</p>
-						</div>
-						
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/pilot.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">179 000 км, 3.5 AT (257 л.с.), внедорожник, полный, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="clearfix">
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="clearfix">
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-				</div>
-				<div class="row4">
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Lexus GS300, 2007.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Lexus GS300, 2007</h5>
-			                    <p id="price">699 999 руб.</p>
-			                </a>
-			                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/LADA (ВАЗ) 2105, 1997.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>LADA (ВАЗ) 2105, 1997</h5>
-			                    <p id="price">98 000 руб.</p>
-			                </a>
-			                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
-			            </div>
-			            
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/peugeot 308, 2008.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Peugeot 308, 2008</h5>
-			                    <p id="price">300 000руб.</p>
-			                </a>
-			                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
-			            </div>
-			            
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Chevrolet Lanos, 2008.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Chevrolet Lanos, 2008</h5>
-			                    <p id="price">150 000 руб.</p>
-			                </a>
-			                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Land Rover Range Rover Sport, 2015.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Land Rover Range Rover Sport, 2015</h5>
-			                    <p id="price">3 260 000 руб.</p>
-			                </a>
-			                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Opel Astra, 2013.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Opel Astra, 2013</h5>
-			                    <p id="price">449 000 руб.</p>
-			                </a>
-			                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Peugeot 308, 2010.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Peugeot 308, 2010</h5>
-			                    <p id="price">290 000 руб.</p>
-			                </a>
-			                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Volkswagen Touareg, 2004.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Volkswagen Touareg, 2004</h5>
-			                    <p id="price">600 000 руб.</p>
-			                </a>
-			                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Dodge Grand Caravan, 2003.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Dodge Grand Caravan, 2003</h5>
-			                    <p id="price">380 000 руб.</p>
-			                </a>
-			                <p id="about">3.8 л (218 л.с.), бензин, автомат, передний, 185 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			        <div class="card">
-			            <a href="#"><img src="img/car/Лада 2113, 2012.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Лада 2113, 2012</h5>
-			                    <p id="price">167 000 руб.</p>
-			                </a>
-			                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			        <div class="card">
-			            <a href="#"><img src="img/Quicksilver 340 Sport + tohatsu M 15D2.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Quicksilver 340 Sport</h5>
-			                    <p id="price">390 000 руб.</p>
-			                </a>
-			                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
-			            </div>
-			        </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			        <div class="card">
-			            <a href="#"><img src="img/Гидроцикл yamaha VX 700.jpg"></a>
-			            <div class="price">
-			                <a id="buy">
-			                    <h5>Гидроцикл yamaha VX 700</h5>
-			                    <p id="price">285 000 руб.</p>
-			                </a>
-			                <p id="about">Гидроцикл yamaha VX 700</p>
-			            </div>
-			        </div>
-			    	</div>
-				</div>
-				<div class="row5">
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Accord, 2011</h5>
-								<p id="price">699 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/civic.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Civic, 2008</h5>
-								<p id="price">420 000 руб.</p>
-							</a>
-							<p id="about">129 000 км, 1.8 AT (140 л.с.), седан, передний, бензин</p>
-						</div>
-						
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/cr-v.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda CR-V, 2013</h5>
-								<p id="price">1 140 000 руб.</p>
-							</a>
-							<p id="about">44 200 км, 2.0 MT (150 л.с.), универсал, полный, бензин</p>
-						</div>
-						
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/pilot.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">179 000 км, 3.5 AT (257 л.с.), внедорожник, полный, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="clearfix">
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="clearfix">
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6 xs-12">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-					<div class="card">
-						<a href="#"><img src="img/car/car2.jpg"></a>
-						<div class="price">
-							<a id="buy">
-								<h5>Honda Pilot, 2009</h5>
-								<p id="price">837 000 руб.</p>
-							</a>
-							<p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
-						</div>
-					</div>
-					</div>
-				</div>
-				<div id="pager-nav">
-				<nav class="pager-nav">
-				  <ul class="pagination">
-					<li>
-					  <a id="Previous" href="#" aria-label="Previous">
-						<span aria-hidden="true">&laquo;</span>
-					  </a>
-					</li>
-					<li><a id="1" href="">1</a></li>
-					<li><a id="2" href="">2</a></li>
-					<li><a id="3" href="">3</a></li>
-					<li><a id="4" href="">4</a></li>
-					<li><a id="5" href="">5</a></li>
-					<li>
-					  <a id="Next" href="#" aria-label="Next">
-						<span aria-hidden="true">&raquo;</span>
-					  </a>
-					</li>
-				  </ul>
-				</nav>
-				</div>
-			</div>
-			<div class="content">
-			<h3 id="motorcycle">Мотоциклы</h3>
-				<div class="row" id="motorcycle">
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle1.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Lexus GS300, 2007</h5>
-		    	                <p id="price">699 999 руб.</p>
-		    	            </a>
-		    	            <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle2.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>LADA (ВАЗ) 2105, 1997</h5>
-		    	                <p id="price">98 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
-		    	        </div>
-		    	        
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle3.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Peugeot 308, 2008</h5>
-		    	                <p id="price">300 000руб.</p>
-		    	            </a>
-		    	            <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
-		    	        </div>
-		    	        
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle4.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Chevrolet Lanos, 2008</h5>
-		    	                <p id="price">150 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="clearfix">
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle5.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Land Rover Range Rover Sport, 2015</h5>
-		    	                <p id="price">3 260 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle6.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Opel Astra, 2013</h5>
-		    	                <p id="price">449 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle7.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Peugeot 308, 2010</h5>
-		    	                <p id="price">290 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle8.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Volkswagen Touareg, 2004</h5>
-		    	                <p id="price">600 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="clearfix">
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle9.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Dodge Grand Caravan, 2003</h5>
-		    	                <p id="price">380 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle10.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Лада 2113, 2012</h5>
-		    	                <p id="price">167 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6 xs-12">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle11.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
-		    	                <p id="price">90 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-		    	<div class="col-md-3 col-sm-6">
-		    	    <div class="card">
-		    	        <a href="#"><img src="img/motorcycle/motorcycle12.jpg"></a>
-		    	        <div class="price">
-		    	            <a id="buy">
-		    	                <h5>Гидроцикл yamaha VX 700</h5>
-		    	                <p id="price">285 000 руб.</p>
-		    	            </a>
-		    	            <p id="about">Гидроцикл yamaha VX 700</p>
-		    	        </div>
-		    	    </div>
-		    	</div>
-			</div>
-			</div>
-			<div class="content">
-				<h3 id="truck">Грузовые</h3>
-				<div class="row" id="truck">
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Lexus GS300, 2007</h5>
-			    	                <p id="price">699 999 руб.</p>
-			    	            </a>
-			    	            <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck6.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>LADA (ВАЗ) 2105, 1997</h5>
-			    	                <p id="price">98 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
-			    	        </div>
-			    	        
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck3.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Peugeot 308, 2008</h5>
-			    	                <p id="price">300 000руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
-			    	        </div>
-			    	        
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck4.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Chevrolet Lanos, 2008</h5>
-			    	                <p id="price">150 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck5.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Land Rover Range Rover Sport, 2015</h5>
-			    	                <p id="price">3 260 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck6.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Opel Astra, 2013</h5>
-			    	                <p id="price">449 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck7.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Peugeot 308, 2010</h5>
-			    	                <p id="price">290 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck8.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Volkswagen Touareg, 2004</h5>
-			    	                <p id="price">600 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck9.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Dodge Grand Caravan, 2003</h5>
-			    	                <p id="price">380 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck10.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Лада 2113, 2012</h5>
-			    	                <p id="price">167 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
-			    	                <p id="price">90 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/truck/truck5.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Гидроцикл yamaha VX 700</h5>
-			    	                <p id="price">285 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">Гидроцикл yamaha VX 700</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-				</div>
-			</div>
-			<div class="content">
-				<h3 id="all-terrain-vehicle">Квадроциклы</h3>
-				<div class="row" id="all-terrain-vehicle">
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Lexus GS300, 2007</h5>
-			    	                <p id="price">699 999 руб.</p>
-			    	            </a>
-			    	            <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>LADA (ВАЗ) 2105, 1997</h5>
-			    	                <p id="price">98 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
-			    	        </div>
-			    	        
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Peugeot 308, 2008</h5>
-			    	                <p id="price">300 000руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
-			    	        </div>
-			    	        
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Chevrolet Lanos, 2008</h5>
-			    	                <p id="price">150 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Land Rover Range Rover Sport, 2015</h5>
-			    	                <p id="price">3 260 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Opel Astra, 2013</h5>
-			    	                <p id="price">449 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Peugeot 308, 2010</h5>
-			    	                <p id="price">290 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Volkswagen Touareg, 2004</h5>
-			    	                <p id="price">600 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Dodge Grand Caravan, 2003</h5>
-			    	                <p id="price">380 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Лада 2113, 2012</h5>
-			    	                <p id="price">167 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
-			    	                <p id="price">90 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Гидроцикл yamaha VX 700</h5>
-			    	                <p id="price">285 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">Гидроцикл yamaha VX 700</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-				</div>
-			</div>
-			<div class="content">
-				<h3 id="yacht">Водная техника</h3>
-				<div class="row" id="yacht">
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht1.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Lexus GS300, 2007</h5>
-			    	                <p id="price">699 999 руб.</p>
-			    	            </a>
-			    	            <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht2.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>LADA (ВАЗ) 2105, 1997</h5>
-			    	                <p id="price">98 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
-			    	        </div>
-			    	        
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht3.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Peugeot 308, 2008</h5>
-			    	                <p id="price">300 000руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
-			    	        </div>
-			    	        
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht4.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Chevrolet Lanos, 2008</h5>
-			    	                <p id="price">150 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht5.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Land Rover Range Rover Sport, 2015</h5>
-			    	                <p id="price">3 260 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht6.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Opel Astra, 2013</h5>
-			    	                <p id="price">449 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht7.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Peugeot 308, 2010</h5>
-			    	                <p id="price">290 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht8.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Volkswagen Touareg, 2004</h5>
-			    	                <p id="price">600 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="clearfix">
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht9.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Dodge Grand Caravan, 2003</h5>
-			    	                <p id="price">380 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht10.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Лада 2113, 2012</h5>
-			    	                <p id="price">167 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6 xs-12">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht2.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
-			    	                <p id="price">90 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-			    	<div class="col-md-3 col-sm-6">
-			    	    <div class="card">
-			    	        <a href="#"><img src="img/yacht3.jpg"></a>
-			    	        <div class="price">
-			    	            <a id="buy">
-			    	                <h5>Гидроцикл yamaha VX 700</h5>
-			    	                <p id="price">285 000 руб.</p>
-			    	            </a>
-			    	            <p id="about">Гидроцикл yamaha VX 700</p>
-			    	        </div>
-			    	    </div>
-			    	</div>
-				</div>
-			</div>
-		</div>
-		<div class="contacts">
-			<p id="contacts">Контакты</p>
-			<div class="contacts-contein">
-				<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d4486.634892672418!2d49.1553733!3d55.7877255!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x415ead7598337009%3A0x5b96b2df953ab4cb!2z0KjQstC10Lkg0KbQsNGA0YHRgtCy0L4sINGD0LsuINCU0L7RgdGC0L7QtdCy0YHQutC-0LPQviwgNjYsINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMDk3!3m2!1d55.787323699999995!2d49.155586299999996!5e0!3m2!1sru!2sru!4v1501695987059" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<div class="contacts-txt">
-				<p>Наш саон находится по адресу: CarRow ул. Достоевского, 66, Казань, Респ. Татарстан, Россия, 420097</p>
-				<br>
-				<p>Наш контактный телефон: 82186321566</p>
-				<br>
-				<p id="time">Режим работы: 
-					Пн-Пт:9:00-20:00<br>
-					Сб-Вс:выходной
-				</p>
-			</div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active-link"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Главная <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#contacts"><i class="fa fa-address-book" aria-hidden="true"></i>Контакты</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>Категории <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#motorcycle"><i class="fa fa-motorcycle" aria-hidden="true"></i>Мотоциклы</a></li>
+                                <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i>Легковые</a></li>
+                                <li><a href="#truck"><i class="fa fa-truck" aria-hidden="true"></i>Грузовые</a></li>
+                                <li>
+                                    <a href="#all-terrain-vehicle"><img src="img/квадроцикл.jpg">Квадроциклы</a>
+                                </li>
+                                <li>
+                                    <a href="#yacht"><img src="img/яхта.jpg">Водная техника</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Найти</button>
+                    </form>
 
-			</div>
-		</div>
-	</main>
+                </div>
+                <!-- /.navbar-collapse -->
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+    <main>
+        <div class="car-el" id="anchor">
+            <div class="carousel-arrow-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+            <div class="car-el-head">
+                <ul class="carousel">
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/civic2.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/bug.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/motorcycle/bike10.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/7.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/yacht1.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/5.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/truck/truck5.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/7.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/4.jpg"></a>
+                    </li>
+                    <li class="crousel-item">
+                        <a href="#"><img src="img/car/6.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="carousel-arrow-right"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="container">
+            <div class="left-sidebar">
+                <ul class="menu">
+                    <li><a href="#">Категории </a></li>
+                    <li class="choice"><a href="#motorcycle"><i class="fa fa-motorcycle" ></i>Мотоциклы</a>
+                        <p>98</p>
+                    </li>
+                    <li class="choice"><a href="#"><i class="fa fa-car"></i>Легковые</a>
+                        <p>543</p>
+                    </li>
+                    <li class="choice"><a href="#truck"><i class="fa fa-truck"></i>Грузовые</a>
+                        <p>102</p>
+                    </li>
+                    <li class="choice">
+                        <a href="#all-terrain-vehicle"><img src="img/квадроцикл.jpg">Квадроциклы</a>
+                        <p>25</p>
+                    </li>
+                    <li class="choice">
+                        <a href="#yacht"><img src="img/яхта.jpg">Водная техника</a>
+                        <p>32</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="row1" id="car">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Accord, 2011</h5>
+                                    <p id="price">699 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/civic.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Civic, 2008</h5>
+                                    <p id="price">420 000 руб.</p>
+                                </a>
+                                <p id="about">129 000 км, 1.8 AT (140 л.с.), седан, передний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/cr-v.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda CR-V, 2013</h5>
+                                    <p id="price">1 140 000 руб.</p>
+                                </a>
+                                <p id="about">44 200 км, 2.0 MT (150 л.с.), универсал, полный, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/pilot.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">179 000 км, 3.5 AT (257 л.с.), внедорожник, полный, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Lexus GS300, 2007.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Lexus GS300, 2007</h5>
+                                    <p id="price">699 999 руб.</p>
+                                </a>
+                                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/LADA (ВАЗ) 2105, 1997.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>LADA (ВАЗ) 2105, 1997</h5>
+                                    <p id="price">98 000 руб.</p>
+                                </a>
+                                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/peugeot 308, 2008.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2008</h5>
+                                    <p id="price">300 000руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Chevrolet Lanos, 2008.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Chevrolet Lanos, 2008</h5>
+                                    <p id="price">150 000 руб.</p>
+                                </a>
+                                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Land Rover Range Rover Sport, 2015.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Land Rover Range Rover Sport, 2015</h5>
+                                    <p id="price">3 260 000 руб.</p>
+                                </a>
+                                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Opel Astra, 2013.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Opel Astra, 2013</h5>
+                                    <p id="price">449 000 руб.</p>
+                                </a>
+                                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Peugeot 308, 2010.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2010</h5>
+                                    <p id="price">290 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Volkswagen Touareg, 2004.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Volkswagen Touareg, 2004</h5>
+                                    <p id="price">600 000 руб.</p>
+                                </a>
+                                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Dodge Grand Caravan, 2003.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Dodge Grand Caravan, 2003</h5>
+                                    <p id="price">380 000 руб.</p>
+                                </a>
+                                <p id="about">3.8 л (218 л.с.), бензин, автомат, передний, 185 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Лада 2113, 2012.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Лада 2113, 2012</h5>
+                                    <p id="price">167 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/Quicksilver 340 Sport + tohatsu M 15D2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Quicksilver 340 Sport</h5>
+                                    <p id="price">390 000 руб.</p>
+                                </a>
+                                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/Гидроцикл yamaha VX 700.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Гидроцикл yamaha VX 700</h5>
+                                    <p id="price">285 000 руб.</p>
+                                </a>
+                                <p id="about">Гидроцикл yamaha VX 700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Accord, 2011</h5>
+                                    <p id="price">699 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/civic.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Civic, 2008</h5>
+                                    <p id="price">420 000 руб.</p>
+                                </a>
+                                <p id="about">129 000 км, 1.8 AT (140 л.с.), седан, передний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/cr-v.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda CR-V, 2013</h5>
+                                    <p id="price">1 140 000 руб.</p>
+                                </a>
+                                <p id="about">44 200 км, 2.0 MT (150 л.с.), универсал, полный, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/pilot.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">179 000 км, 3.5 AT (257 л.с.), внедорожник, полный, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Lexus GS300, 2007.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Lexus GS300, 2007</h5>
+                                    <p id="price">699 999 руб.</p>
+                                </a>
+                                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/LADA (ВАЗ) 2105, 1997.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>LADA (ВАЗ) 2105, 1997</h5>
+                                    <p id="price">98 000 руб.</p>
+                                </a>
+                                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/peugeot 308, 2008.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2008</h5>
+                                    <p id="price">300 000руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Chevrolet Lanos, 2008.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Chevrolet Lanos, 2008</h5>
+                                    <p id="price">150 000 руб.</p>
+                                </a>
+                                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Land Rover Range Rover Sport, 2015.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Land Rover Range Rover Sport, 2015</h5>
+                                    <p id="price">3 260 000 руб.</p>
+                                </a>
+                                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Opel Astra, 2013.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Opel Astra, 2013</h5>
+                                    <p id="price">449 000 руб.</p>
+                                </a>
+                                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Peugeot 308, 2010.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2010</h5>
+                                    <p id="price">290 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Volkswagen Touareg, 2004.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Volkswagen Touareg, 2004</h5>
+                                    <p id="price">600 000 руб.</p>
+                                </a>
+                                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Dodge Grand Caravan, 2003.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Dodge Grand Caravan, 2003</h5>
+                                    <p id="price">380 000 руб.</p>
+                                </a>
+                                <p id="about">3.8 л (218 л.с.), бензин, автомат, передний, 185 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/Лада 2113, 2012.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Лада 2113, 2012</h5>
+                                    <p id="price">167 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/Quicksilver 340 Sport + tohatsu M 15D2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Quicksilver 340 Sport</h5>
+                                    <p id="price">390 000 руб.</p>
+                                </a>
+                                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/Гидроцикл yamaha VX 700.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Гидроцикл yamaha VX 700</h5>
+                                    <p id="price">285 000 руб.</p>
+                                </a>
+                                <p id="about">Гидроцикл yamaha VX 700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Accord, 2011</h5>
+                                    <p id="price">699 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/civic.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Civic, 2008</h5>
+                                    <p id="price">420 000 руб.</p>
+                                </a>
+                                <p id="about">129 000 км, 1.8 AT (140 л.с.), седан, передний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/cr-v.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda CR-V, 2013</h5>
+                                    <p id="price">1 140 000 руб.</p>
+                                </a>
+                                <p id="about">44 200 км, 2.0 MT (150 л.с.), универсал, полный, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/pilot.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">179 000 км, 3.5 AT (257 л.с.), внедорожник, полный, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/car/car2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Honda Pilot, 2009</h5>
+                                    <p id="price">837 000 руб.</p>
+                                </a>
+                                <p id="about">76 000 км, 2.4 AT (200 л.с.), седан, передний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="motorcycle">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Lexus GS300, 2007</h5>
+                                    <p id="price">699 999 руб.</p>
+                                </a>
+                                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>LADA (ВАЗ) 2105, 1997</h5>
+                                    <p id="price">98 000 руб.</p>
+                                </a>
+                                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle3.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2008</h5>
+                                    <p id="price">300 000руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle4.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Chevrolet Lanos, 2008</h5>
+                                    <p id="price">150 000 руб.</p>
+                                </a>
+                                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle5.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Land Rover Range Rover Sport, 2015</h5>
+                                    <p id="price">3 260 000 руб.</p>
+                                </a>
+                                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle6.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Opel Astra, 2013</h5>
+                                    <p id="price">449 000 руб.</p>
+                                </a>
+                                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle7.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2010</h5>
+                                    <p id="price">290 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle8.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Volkswagen Touareg, 2004</h5>
+                                    <p id="price">600 000 руб.</p>
+                                </a>
+                                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle9.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Dodge Grand Caravan, 2003</h5>
+                                    <p id="price">380 000 руб.</p>
+                                </a>
+                                <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle10.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Лада 2113, 2012</h5>
+                                    <p id="price">167 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle11.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
+                                    <p id="price">90 000 руб.</p>
+                                </a>
+                                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/motorcycle/motorcycle12.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Гидроцикл yamaha VX 700</h5>
+                                    <p id="price">285 000 руб.</p>
+                                </a>
+                                <p id="about">Гидроцикл yamaha VX 700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="truck">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Lexus GS300, 2007</h5>
+                                    <p id="price">699 999 руб.</p>
+                                </a>
+                                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck6.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>LADA (ВАЗ) 2105, 1997</h5>
+                                    <p id="price">98 000 руб.</p>
+                                </a>
+                                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck3.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2008</h5>
+                                    <p id="price">300 000руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck4.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Chevrolet Lanos, 2008</h5>
+                                    <p id="price">150 000 руб.</p>
+                                </a>
+                                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck5.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Land Rover Range Rover Sport, 2015</h5>
+                                    <p id="price">3 260 000 руб.</p>
+                                </a>
+                                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck6.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Opel Astra, 2013</h5>
+                                    <p id="price">449 000 руб.</p>
+                                </a>
+                                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck7.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2010</h5>
+                                    <p id="price">290 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck8.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Volkswagen Touareg, 2004</h5>
+                                    <p id="price">600 000 руб.</p>
+                                </a>
+                                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck9.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Dodge Grand Caravan, 2003</h5>
+                                    <p id="price">380 000 руб.</p>
+                                </a>
+                                <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck10.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Лада 2113, 2012</h5>
+                                    <p id="price">167 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
+                                    <p id="price">90 000 руб.</p>
+                                </a>
+                                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/truck/truck5.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Гидроцикл yamaha VX 700</h5>
+                                    <p id="price">285 000 руб.</p>
+                                </a>
+                                <p id="about">Гидроцикл yamaha VX 700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="all-terrain-vehicle">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Lexus GS300, 2007</h5>
+                                    <p id="price">699 999 руб.</p>
+                                </a>
+                                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>LADA (ВАЗ) 2105, 1997</h5>
+                                    <p id="price">98 000 руб.</p>
+                                </a>
+                                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2008</h5>
+                                    <p id="price">300 000руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Chevrolet Lanos, 2008</h5>
+                                    <p id="price">150 000 руб.</p>
+                                </a>
+                                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Land Rover Range Rover Sport, 2015</h5>
+                                    <p id="price">3 260 000 руб.</p>
+                                </a>
+                                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Opel Astra, 2013</h5>
+                                    <p id="price">449 000 руб.</p>
+                                </a>
+                                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2010</h5>
+                                    <p id="price">290 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Volkswagen Touareg, 2004</h5>
+                                    <p id="price">600 000 руб.</p>
+                                </a>
+                                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Dodge Grand Caravan, 2003</h5>
+                                    <p id="price">380 000 руб.</p>
+                                </a>
+                                <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Лада 2113, 2012</h5>
+                                    <p id="price">167 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
+                                    <p id="price">90 000 руб.</p>
+                                </a>
+                                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/all-terrain-vehicle/all-terrain-vehicle1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Гидроцикл yamaha VX 700</h5>
+                                    <p id="price">285 000 руб.</p>
+                                </a>
+                                <p id="about">Гидроцикл yamaha VX 700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="yacht">
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht1.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Lexus GS300, 2007</h5>
+                                    <p id="price">699 999 руб.</p>
+                                </a>
+                                <p id="about">110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>LADA (ВАЗ) 2105, 1997</h5>
+                                    <p id="price">98 000 руб.</p>
+                                </a>
+                                <p id="about">66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht3.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2008</h5>
+                                    <p id="price">300 000руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht4.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Chevrolet Lanos, 2008</h5>
+                                    <p id="price">150 000 руб.</p>
+                                </a>
+                                <p id="about">1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht5.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Land Rover Range Rover Sport, 2015</h5>
+                                    <p id="price">3 260 000 руб.</p>
+                                </a>
+                                <p id="about">3.0 л (249 л.с.), дизель, автомат, 4WD, 82 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht6.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Opel Astra, 2013</h5>
+                                    <p id="price">449 000 руб.</p>
+                                </a>
+                                <p id="about">1.8 л (140 л.с.), бензин, механика, передний, 47 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht7.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Peugeot 308, 2010</h5>
+                                    <p id="price">290 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (120 л.с.), бензин, механика, передний, 63 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht8.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Volkswagen Touareg, 2004</h5>
+                                    <p id="price">600 000 руб.</p>
+                                </a>
+                                <p id="about">3.2 л (220 л.с.), бензин, автомат, 4WD, 75 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht9.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Dodge Grand Caravan, 2003</h5>
+                                    <p id="price">380 000 руб.</p>
+                                </a>
+                                <p id="about">3.8 л (218 л.с.), бензин, 185 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht10.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Лада 2113, 2012</h5>
+                                    <p id="price">167 000 руб.</p>
+                                </a>
+                                <p id="about">1.6 л (82 л.с.), бензин, механика, передний, 101 тыс. км</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 xs-12">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht2.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Quicksilver 340 Sport + tohatsu M 15D21</h5>
+                                    <p id="price">90 000 руб.</p>
+                                </a>
+                                <p id="about">2008 год, длина 3,40 м., 15,00 л.с., бензин. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card">
+                            <a href="#"><img src="img/yacht3.jpg"></a>
+                            <div class="price">
+                                <a id="buy">
+                                    <h5>Гидроцикл yamaha VX 700</h5>
+                                    <p id="price">285 000 руб.</p>
+                                </a>
+                                <p id="about">Гидроцикл yamaha VX 700</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="loadMore">Load More</a>
+            </div>
+        </div>
+        <div class="contacts">
+            <p id="contacts">Контакты</p>
+            <div class="contacts-contein">
+                <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d4486.634892672418!2d49.1553733!3d55.7877255!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x415ead7598337009%3A0x5b96b2df953ab4cb!2z0KjQstC10Lkg0KbQsNGA0YHRgtCy0L4sINGD0LsuINCU0L7RgdGC0L7QtdCy0YHQutC-0LPQviwgNjYsINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMDk3!3m2!1d55.787323699999995!2d49.155586299999996!5e0!3m2!1sru!2sru!4v1501695987059"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="contacts-txt">
+                    <p>Наш саон находится по адресу: CarRow ул. Достоевского, 66, Казань, Респ. Татарстан, Россия, 420097</p>
+                    <br>
+                    <p>Наш контактный телефон: 82186321566</p>
+                    <br>
+                    <p id="time">Режим работы: Пн-Пт:9:00-20:00
+                        <br> Сб-Вс:выходной
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
     <footer>
-		<div class="container">
-			<div class="footerTop">
-				<div class="footerTop__linksColumn">
-					<h4>Компания</h4>
-					<ul class="bottom-nav">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Вакансии</a></li>
-						<li><a href="#">Контакты и поддержка</a></li>
-						<li><a href="#">История развития</a></li>
-					</ul>
-				</div>
-				<div class="footerTop__linksColumn">
-					<h4>Компания</h4>
-					<ul class="bottom-nav">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Вакансии</a></li>
-						<li><a href="#">Контакты и поддержка</a></li>
-						<li><a href="#">История развития</a></li>
-					</ul>
-				</div>
-				<div class="footerTop__linksColumn">
-					<h4>Компания</h4>
-					<ul class="bottom-nav">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Вакансии</a></li>
-						<li><a href="#">Контакты и поддержка</a></li>
-						<li><a href="#">История развития</a></li>
-					</ul>
-				</div>
-				<div class="footerTop__linksColumn">
-					<h4>Компания</h4>
-					<ul class="bottom-nav">
-						<li><a href="#">О нас</a></li>
-						<li><a href="#">Вакансии</a></li>
-						<li><a href="#">Контакты и поддержка</a></li>
-						<li><a href="#">История развития</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="conteiner">
-				<div class="copyright">Copyright Алексей Ермолаев 2017</div>
-				<div class="icon-bar">
-					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-				</div>
-				<a class="pull-right" href="#anchor" title="Вернуться к началу" id="topbutton"><img src="img/41.png"></i></a>
-			</div>
-		</div>
-	</footer>
-    
-  </body>
+        <div class="container">
+            <div class="footerTop">
+                <div class="footerTop__linksColumn">
+                    <h4>Компания</h4>
+                    <ul class="bottom-nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты и поддержка</a></li>
+                        <li><a href="#">История развития</a></li>
+                    </ul>
+                </div>
+                <div class="footerTop__linksColumn">
+                    <h4>Компания</h4>
+                    <ul class="bottom-nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты и поддержка</a></li>
+                        <li><a href="#">История развития</a></li>
+                    </ul>
+                </div>
+                <div class="footerTop__linksColumn">
+                    <h4>Компания</h4>
+                    <ul class="bottom-nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты и поддержка</a></li>
+                        <li><a href="#">История развития</a></li>
+                    </ul>
+                </div>
+                <div class="footerTop__linksColumn">
+                    <h4>Компания</h4>
+                    <ul class="bottom-nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты и поддержка</a></li>
+                        <li><a href="#">История развития</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conteiner">
+                <div class="copyright">Copyright Алексей Ермолаев 2017</div>
+                <div class="icon-bar">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <a class="pull-right" href="#anchor" title="Вернуться к началу" id="topbutton"><img src="img/41.png"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
