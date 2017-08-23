@@ -12,6 +12,9 @@ export class NavbarComponent {
 
 	onKeyup(data: any){
 		this.message = data;
+		console.log(data);
 	}
-	
+	clicked(event: any) {
+    event.preventDefault();
+  }
 }

@@ -2,35 +2,8 @@
     <div class="carousel-arrow-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
     <div class="car-el-head">
         <ul class="carousel">
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/civic2.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/bug.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/motorcycle/bike10.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/7.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/yacht1.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/5.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/truck/truck5.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/7.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/4.jpg"></a>
-            </li>
-            <li class="crousel-item">
-                <a href="#"><img src="img/car/6.jpg"></a>
+            <li class="crousel-item" *ngFor="let item of items">
+                <a href="#"><img src="{{item.img}}"></a>
             </li>
         </ul>
     </div>

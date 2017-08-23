@@ -9,8 +9,41 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var items = [
+    {
+        img: 'img/car/civic2.jpg'
+    },
+    {
+        img: 'img/car/bug.jpg'
+    },
+    {
+        img: 'img/motorcycle/bike10.jpg'
+    },
+    {
+        img: 'img/car/7.jpg'
+    },
+    {
+        img: 'img/yacht1.jpg'
+    },
+    {
+        img: 'img/car/5.jpg'
+    },
+    {
+        img: 'img/truck/truck5.jpg'
+    },
+    {
+        img: 'img/car/7.jpg'
+    },
+    {
+        img: 'img/car/4.jpg'
+    },
+    {
+        img: 'img/car/6.jpg'
+    },
+];
 var CarouselComponent = (function () {
     function CarouselComponent() {
+        this.items = items;
     }
     CarouselComponent = __decorate([
         core_1.Component({

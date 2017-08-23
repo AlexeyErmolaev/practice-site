@@ -44,6 +44,13 @@ h3 {
     padding-bottom: 30px;
 }
 
-#yacht .card {
+#truck .card {
     min-height: 284px;
+}
+
+.showRow2,
+.showRow3,
+.showRow4,
+.showRow5 {
+    display: none;
 }

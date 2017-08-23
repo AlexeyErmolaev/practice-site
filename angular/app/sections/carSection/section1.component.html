@@ -1,0 +1,73 @@
+<div class="content">
+    <div class="row1" id="car">
+        <div class="col-md-3 col-sm-6 xs-12" *ngFor="let section of sections">
+            <div class="card">
+                <a href="#"><img src={{section.img}}></a>
+                <div class="price">
+                    <a id="buy">
+                        <h5>{{section.title}}</h5>
+                        <p id="price">{{section.cost}}</p>
+                    </a>
+                    <p id="about">{{section.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row2" [ngClass]="{showRow2: show1}">
+        <div class="col-md-3 col-sm-6 xs-12" *ngFor="let row of row2">
+            <div class="card">
+                <a href="#"><img src="{{row.img}}"></a>
+                <div class="price">
+                    <a id="buy">
+                        <h5>{{row.title}}</h5>
+                        <p id="price">{{row.cost}}</p>
+                    </a>
+                    <p id="about">{{row.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row3" [ngClass]="{showRow3: show2}">
+        <div class="col-md-3 col-sm-6 xs-12" *ngFor="let section of sections">
+            <div class="card">
+                <a href="#"><img src={{section.img}}></a>
+                <div class="price">
+                    <a id="buy">
+                        <h5>{{section.title}}</h5>
+                        <p id="price">{{section.cost}}</p>
+                    </a>
+                    <p id="about">{{section.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row4" [ngClass]="{showRow4: show3}">
+        <div class="col-md-3 col-sm-6 xs-12" *ngFor="let row of row2">
+            <div class="card">
+                <a href="#"><img src="{{row.img}}"></a>
+                <div class="price">
+                    <a id="buy">
+                        <h5>{{row.title}}</h5>
+                        <p id="price">{{row.cost}}</p>
+                    </a>
+                    <p id="about">{{row.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row5" [ngClass]="{showRow5: show4}">
+        <div class="col-md-3 col-sm-6 xs-12" *ngFor="let section of sections">
+            <div class="card">
+                <a href="#"><img src={{section.img}}></a>
+                <div class="price">
+                    <a id="buy">
+                        <h5>{{section.title}}</h5>
+                        <p id="price">{{section.cost}}</p>
+                    </a>
+                    <p id="about">{{section.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button href="#" id="loadMore" (click)="toggle()" *ngIf="this.count!==4">Load More</button>
+</div>

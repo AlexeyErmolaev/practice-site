@@ -1,3 +1,7 @@
+#all-terrain-vehicle .card {
+    min-height: 284px;
+}
+
 .h5,
 h5,
 p {
@@ -39,11 +43,14 @@ p#price {
     margin-bottom: 0px;
 }
 
-#motorcycle .card {
-    min-height: 262px;
-}
-
 h3 {
     text-align: center;
     padding-bottom: 30px;
+}
+
+.showRow2,
+.showRow3,
+.showRow4,
+.showRow5 {
+    display: none;
 }

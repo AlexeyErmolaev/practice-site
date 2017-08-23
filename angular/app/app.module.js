@@ -17,11 +17,11 @@ var navbar_component_1 = require('./navbar/navbar.component');
 var sidebar_component_1 = require('./sidebar/sidebar.component');
 var contacts_component_1 = require('./contacts/contacts.component');
 var footer_component_1 = require('./footer/footer.component');
-var content1_component_1 = require('./content1/content1.component');
-var content2_component_1 = require('./content2/content2.component');
-var content3_component_1 = require('./content3/content3.component');
-var content4_component_1 = require('./content4/content4.component');
-var content5_component_1 = require('./content5/content5.component');
+var section1_component_1 = require('./sections/carSection/section1.component');
+var section_component_1 = require('./sections/motorcycleSection/section.component');
+var section_component_2 = require('./sections/truckSection/section.component');
+var section_component_3 = require('./sections/alltervehSection/section.component');
+var section_component_4 = require('./sections/yachtSection/section.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -35,11 +35,11 @@ var AppModule = (function () {
                 sidebar_component_1.SidebarComponent,
                 contacts_component_1.ContactsComponent,
                 footer_component_1.FooterComponent,
-                content1_component_1.Content1Component,
-                content2_component_1.Content2Component,
-                content3_component_1.Content3Component,
-                content4_component_1.Content4Component,
-                content5_component_1.Content5Component
+                section1_component_1.Section1Component,
+                section_component_1.Section2Component,
+                section_component_2.Section3Component,
+                section_component_3.Section4Component,
+                section_component_4.Section5Component
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

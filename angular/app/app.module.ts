@@ -8,11 +8,11 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {SidebarComponent} from './sidebar/sidebar.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {FooterComponent} from './footer/footer.component';
-import {Content1Component} from './content1/content1.component';
-import {Content2Component} from './content2/content2.component';
-import {Content3Component} from './content3/content3.component';
-import {Content4Component} from './content4/content4.component';
-import {Content5Component} from './content5/content5.component';
+import {Section1Component} from './sections/carSection/section1.component';
+import {Section2Component} from './sections/motorcycleSection/section.component';
+import {Section3Component} from './sections/truckSection/section.component';
+import {Section4Component} from './sections/alltervehSection/section.component';
+import {Section5Component} from './sections/yachtSection/section.component';
 
 @NgModule({ 
 	imports: [BrowserModule, FormsModule],
@@ -23,11 +23,11 @@ import {Content5Component} from './content5/content5.component';
 		SidebarComponent, 
 		ContactsComponent, 
 		FooterComponent, 
-		Content1Component,
-		Content2Component,
-		Content3Component,
-		Content4Component,
-		Content5Component
+		Section1Component,
+		Section2Component,
+		Section3Component,
+		Section4Component,
+		Section5Component
 	],
 	bootstrap: [AppComponent]
 })

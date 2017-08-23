@@ -1,7 +1,3 @@
-#all-terrain-vehicle .card {
-    min-height: 284px;
-}
-
 .h5,
 h5,
 p {
@@ -46,4 +42,15 @@ p#price {
 h3 {
     text-align: center;
     padding-bottom: 30px;
+}
+
+#yacht .card {
+    min-height: 284px;
+}
+
+.showRow2,
+.showRow3,
+.showRow4,
+.showRow5 {
+    display: none;
 }

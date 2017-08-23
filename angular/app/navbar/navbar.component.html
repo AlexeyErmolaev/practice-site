@@ -37,9 +37,8 @@
             <form class="navbar-form navbar-left">
                 <div class="form-group">
                     <input #textbox (keyup.enter)="onKeyup(textbox.value)" (blur)=" onKeyup(textbox.value) " type="text " class="form-control " placeholder="Search ">
-                    <p>{{message}}</p>
                 </div>
-                <button type="submit " class="btn btn-default ">Найти</button>
+                <button type="submit " class="btn btn-default " (click)="clicked($event)">Найти</button>
             </form>
 
         </div>

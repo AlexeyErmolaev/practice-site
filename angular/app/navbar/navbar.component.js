@@ -14,6 +14,10 @@ var NavbarComponent = (function () {
     }
     NavbarComponent.prototype.onKeyup = function (data) {
         this.message = data;
+        console.log(data);
+    };
+    NavbarComponent.prototype.clicked = function (event) {
+        event.preventDefault();
     };
     NavbarComponent = __decorate([
         core_1.Component({
