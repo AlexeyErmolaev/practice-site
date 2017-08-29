@@ -1,5 +1,5 @@
 <div class="content">
-    <h3 id="all-terrain-vehicle">name</h3>
+    <h3 id="all-terrain-vehicle" *ngFor="let name of names">{{name}}</h3>
     <div class="row1" id="car">
         <div class="col-md-3 col-sm-6 xs-12" *ngFor="let section of sections">
             <div class="card">

@@ -3,6 +3,11 @@
     overflow: hidden;
 }
 
+li {
+    list-style-type: none;
+    padding-top: 2px;
+}
+
 .car-el {
     display: flex;
     justify-content: space-between;

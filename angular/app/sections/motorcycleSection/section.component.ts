@@ -1,79 +1,6 @@
 import { Component } from '@angular/core';
 
-const sections = [
-    {
-    title: 'Lexus GS300, 2007',
-  	desc: '110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин',
- 	cost: '699 999 руб.',
-  	img: 'img/motorcycle/motorcycle3.jpg'
-    },
-    {
-    title: 'LADA (ВАЗ) 2105, 1997',
-  	desc: '66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин',
- 	cost: '98 000 руб.',
-  	img: 'img/motorcycle/motorcycle2.jpg'
-    },
-    {
-    title: 'Peugeot 308, 2008',
-  	desc: '1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км',
- 	cost: '300 000руб.',
-  	img: 'img/motorcycle/motorcycle3.jpg'
-    },
-    {
-    title: 'Chevrolet Lanos, 2008',
-  	desc: '1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км',
- 	cost: '150 000 руб.',
-  	img: 'img/motorcycle/motorcycle4.jpg'
-    },
-    {
-    title: 'Lexus GS300, 2007',
-  	desc: '110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин',
- 	cost: '699 999 руб.',
-  	img: 'img/motorcycle/motorcycle4.jpg'
-    },
-    {
-    title: 'LADA (ВАЗ) 2105, 1997',
-  	desc: '66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин',
- 	cost: '98 000 руб.',
-  	img: 'img/motorcycle/motorcycle2.jpg'
-    },
-    {
-    title: 'Peugeot 308, 2008',
-  	desc: '1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км',
- 	cost: '300 000руб.',
-  	img: 'img/motorcycle/motorcycle3.jpg'
-    },
-    {
-    title: 'Chevrolet Lanos, 2008',
-  	desc: '1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км',
- 	cost: '150 000 руб.',
-  	img: 'img/motorcycle/motorcycle4.jpg'
-    },
-    {
-    title: 'Lexus GS300, 2007',
-  	desc: '110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин',
- 	cost: '699 999 руб.',
-  	img: 'img/motorcycle/motorcycle3.jpg'
-    },
-    {
-    title: 'LADA (ВАЗ) 2105, 1997',
-  	desc: '66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин',
- 	cost: '98 000 руб.',
-  	img: 'img/motorcycle/motorcycle2.jpg'
-    },
-    {
-    title: 'Peugeot 308, 2008',
-  	desc: '1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км',
- 	cost: '300 000руб.',
-  	img: 'img/motorcycle/motorcycle3.jpg'
-    },
-    {
-    title: 'Chevrolet Lanos, 2008',
-  	desc: '1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км',
- 	cost: '150 000 руб.',
-  	img: 'img/motorcycle/motorcycle4.jpg'
-    }
-]
+import {motoSections} from '../../shared/data';
 
 @Component({
 	moduleId: module.id,
@@ -83,7 +10,7 @@ const sections = [
 })
 
 export class Section2Component {
-	sections = sections;
+	sections = motoSections;
 
 	show1:boolean=true;
 	show2:boolean=true;

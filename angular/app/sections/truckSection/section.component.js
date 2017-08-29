@@ -9,83 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var sections = [
-    {
-        title: 'Lexus GS300, 2007',
-        desc: '110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин',
-        cost: '699 999 руб.',
-        img: 'img/truck/truck1.jpg'
-    },
-    {
-        title: 'LADA (ВАЗ) 2105, 1997',
-        desc: '66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин',
-        cost: '98 000 руб.',
-        img: 'img/truck/truck6.jpg'
-    },
-    {
-        title: 'Peugeot 308, 2008',
-        desc: '1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км',
-        cost: '300 000руб.',
-        img: 'img/truck/truck3.jpg'
-    },
-    {
-        title: 'Chevrolet Lanos, 2008',
-        desc: '1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км',
-        cost: '150 000 руб.',
-        img: 'img/truck/truck4.jpg'
-    },
-    {
-        title: 'Lexus GS300, 2007',
-        desc: '110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин',
-        cost: '699 999 руб.',
-        img: 'img/truck/truck5.jpg'
-    },
-    {
-        title: 'LADA (ВАЗ) 2105, 1997',
-        desc: '66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин',
-        cost: '98 000 руб.',
-        img: 'img/truck/truck6.jpg'
-    },
-    {
-        title: 'Peugeot 308, 2008',
-        desc: '1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км',
-        cost: '300 000руб.',
-        img: 'img/truck/truck7.jpg'
-    },
-    {
-        title: 'Chevrolet Lanos, 2008',
-        desc: '1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км',
-        cost: '150 000 руб.',
-        img: 'img/truck/truck8.jpg'
-    },
-    {
-        title: 'Lexus GS300, 2007',
-        desc: '110 000 км, 3.0 литра (248 л.с.), автомат, задний, бензин',
-        cost: '699 999 руб.',
-        img: 'img/truck/truck9.jpg'
-    },
-    {
-        title: 'LADA (ВАЗ) 2105, 1997',
-        desc: '66 500 км, 1.5 MT (75 л.с.), седан, задний, бензин',
-        cost: '98 000 руб.',
-        img: 'img/truck/truck10.jpg'
-    },
-    {
-        title: 'Peugeot 308, 2008',
-        desc: '1.6 л (120 л.с.), бензин, автомат, передний, 105 тыс. км',
-        cost: '300 000руб.',
-        img: 'img/truck/truck1.jpg'
-    },
-    {
-        title: 'Chevrolet Lanos, 2008',
-        desc: '1.5 л (86 л.с.), бензин, механика, передний, 94 тыс. км',
-        cost: '150 000 руб.',
-        img: 'img/truck/truck5.jpg'
-    },
-];
+var data_1 = require('../../shared/data');
 var Section3Component = (function () {
     function Section3Component() {
-        this.sections = sections;
+        this.sections = data_1.truckSections;
         this.show1 = true;
         this.show2 = true;
         this.show3 = true;
