@@ -22,6 +22,7 @@ var section_component_1 = require('./sections/motorcycleSection/section.componen
 var section_component_2 = require('./sections/truckSection/section.component');
 var section_component_3 = require('./sections/alltervehSection/section.component');
 var section_component_4 = require('./sections/yachtSection/section.component');
+var transportSections_1 = require('./sections/transportSections');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -39,7 +40,8 @@ var AppModule = (function () {
                 section_component_1.Section2Component,
                 section_component_2.Section3Component,
                 section_component_3.Section4Component,
-                section_component_4.Section5Component
+                section_component_4.Section5Component,
+                transportSections_1.TransportSection
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

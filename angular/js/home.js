@@ -1,48 +1,14 @@
-// листание страниц пагинацией
-$(document).ready(function() {
-    $('#1').click(function() {
-        event.preventDefault();
-        $('.row2, .row3, .row4, .row5').fadeOut('slow');
-        $('.row1').fadeIn('slow');
-    });
-    $('#2').click(function() {
-        event.preventDefault();
-        $('.row1, .row3, .row4, .row5').fadeOut('slow');
-        $('.row2').fadeIn('slow');
-    });
-    $('#3').click(function() {
-        event.preventDefault();
-        $('.row1, .row2, .row4, .row5').fadeOut('slow');
-        $('.row3').fadeIn('slow');
-    });
-    $('#4').click(function() {
-        event.preventDefault();
-        $('.row1, .row2, .row3, .row5').fadeOut('slow');
-        $('.row4').fadeIn('slow');
-    });
-    $('#5').click(function() {
-        event.preventDefault();
-        $('.row1, .row2, .row3, .row4').fadeOut('slow');
-        $('.row5').fadeIn('slow');
-    });
-    $('#Next').click(function() {
-
-    });
-});
-
-
-
 // скролл по якорю
-$(document).ready(function() {
-    $('a[href^="#"]').click(function() {
-        event.preventDefault();
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top - 53
-        }, 2000);
-        return false;
-    });
-});
+// $(document).ready(function() {
+//     $('a[href^="#"]').click(function() {
+//         event.preventDefault();
+//         var el = $(this).attr('href');
+//         $('body').animate({
+//             scrollTop: $(el).offset().top - 53
+//         }, 2000);
+//         return false;
+//     });
+// });
 // перелистывание слайдов кнопками
 $(document).ready(function() {
     var leftclick = $('.carousel-arrow-left');

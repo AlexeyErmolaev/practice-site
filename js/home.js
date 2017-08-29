@@ -9,16 +9,16 @@ $(function() {
     });
 });
 // скролл по якорю
-$(document).ready(function() {
-    $('a[href^="#"]').click(function() {
-        event.preventDefault();
-        var el = $(this).attr('href');
-        $('body').animate({
-            scrollTop: $(el).offset().top - 53
-        }, 2000);
-        return false;
-    });
-});
+// $(document).ready(function() {
+//     $('a[href^="#"]').click(function() {
+//         event.preventDefault();
+//         var el = $(this).attr('href');
+//         $('body').animate({
+//             scrollTop: $(el).offset().top - 53
+//         }, 2000);
+//         return false;
+//     });
+// });
 // перелистывание слайдов кнопками
 $(document).ready(function() {
     var leftclick = $('.carousel-arrow-left');

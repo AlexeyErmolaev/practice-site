@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import{FormsModule} from '@angular/forms';
+import{FormsModule} from '@angular/forms';		
 
 import {AppComponent} from './app.component';
 import {CarouselComponent} from './carousel/carousel.component';
@@ -13,6 +13,7 @@ import {Section2Component} from './sections/motorcycleSection/section.component'
 import {Section3Component} from './sections/truckSection/section.component';
 import {Section4Component} from './sections/alltervehSection/section.component';
 import {Section5Component} from './sections/yachtSection/section.component';
+import {TransportSection} from './sections/transportSections';
 
 @NgModule({ 
 	imports: [BrowserModule, FormsModule],
@@ -27,7 +28,8 @@ import {Section5Component} from './sections/yachtSection/section.component';
 		Section2Component,
 		Section3Component,
 		Section4Component,
-		Section5Component
+		Section5Component,
+		TransportSection
 	],
 	bootstrap: [AppComponent]
 })
