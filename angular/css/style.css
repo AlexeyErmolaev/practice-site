@@ -57,6 +57,7 @@ body {
 @media (min-width: 992px) {
     .col-md-3 {
         width: 24%;
+        min-height: 281px;
     }
 }
 

@@ -45,6 +45,19 @@ var CarouselComponent = (function () {
     function CarouselComponent() {
         this.items = items;
     }
+    CarouselComponent.prototype.toggle = function () {
+        [
+            core_1.trigger('flyInOut', [
+                core_1.transition('void => *', [
+                    core_1.style({ transform: 'translateX(-100%)' }),
+                    core_1.animate(2000)
+                ]),
+                core_1.transition('* => void', [
+                    core_1.animate(2000, core_1.style({ transform: 'translateX(100%)' }))
+                ])
+            ])
+        ];
+    };
     CarouselComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

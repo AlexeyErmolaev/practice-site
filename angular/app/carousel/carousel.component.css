@@ -1,5 +1,5 @@
 .car-el-head {
-    width: 93%;
+    width: 1441px;
     overflow: hidden;
 }
 
@@ -13,9 +13,18 @@ li {
     justify-content: space-between;
 }
 
+.carousel-arrow-left i {
+    margin-left: 20px;
+}
+
+.carousel-arrow-right i {
+    margin-right: 20px;
+}
+
 .carousel-arrow-left i,
 .carousel-arrow-right i {
     margin-top: 85px;
+    font-size: x-large;
 }
 
 .carousel-arrow-left i:hover,

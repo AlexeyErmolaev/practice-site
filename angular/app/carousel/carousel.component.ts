@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, trigger, animate, transition, style} from '@angular/core';
 
 const items=[
 	{
@@ -41,4 +41,15 @@ const items=[
 
 export class CarouselComponent {
 	items=items;
+	toggle(){ [
+    	trigger('flyInOut', [
+        	transition('void => *', [
+        		style({transform: 'translateX(-100%)'}),
+        		animate(2000)
+        	]),
+        	transition('* => void', [
+        		animate(2000, style({transform: 'translateX(100%)'}))
+      		])
+    	])
+	]}
 }
